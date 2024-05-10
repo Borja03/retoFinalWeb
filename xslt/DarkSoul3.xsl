@@ -36,9 +36,12 @@
                 </div>
             </nav>
         </header>
-     
+        <div class="empty"></div>
+        <div class="main">
+
         <h1>Game Information</h1>
         <xsl:apply-templates select="//juego[@id='DS3']"/>
+        </div>
       </body>
     </html>
   </xsl:template>

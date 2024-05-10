@@ -7,6 +7,8 @@
       <head>
         <script src="../../script/script.js"></script>
         <link rel="stylesheet" href="../../css/style.css"></link>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
+
         <title>Game Information</title>
       </head>
       <body>
@@ -35,14 +37,16 @@
                 </div>
             </nav>
         </header>
-        <main>
+        
+        <div class="empty"></div>
           <!--  main section to add here a xslt transformation as cards  -->
       
-      
+          <div class="main">
+
         <h1>Game Information</h1>
         <xsl:apply-templates select="//juego[@id='BB']"/>
+</div>
 
-      </main>
 
       </body>
     </html>

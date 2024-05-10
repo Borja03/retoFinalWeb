@@ -41,18 +41,17 @@
 		</nav>
 	</header>
 
-	<main>
-   <section>
+	      <div class="empty"></div>
+		<!--  main section to add here a xslt transformation as cards  -->
+		<!-- https://colorhunt.co/palette/151515a91d3ac73659eeeeee -->
+		  <div class="main">
       <h2>Last 6 Bosses Added</h2>
       <!-- Apply templates to select the last 6 bosses -->
       <xsl:apply-templates select="bosses/boss[position() > last() - 6]"/>
-    </section>
-  
-
-		<!--  main section to add here a xslt transformation as cards  -->
+  </div>
 
 
-	</main>
+
   	<!--  footer  -->
 	<footer>
 
