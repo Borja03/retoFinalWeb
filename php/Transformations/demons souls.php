@@ -1,6 +1,6 @@
 <?php
 
-require_once("./ServerConexion/BDConexion.php");
+require_once("../../ServerConexion/BDConexion.php");
 
 try{
 $session = new Session();        
@@ -15,7 +15,7 @@ $xml->loadXML($xmlStr);
 
 $xsl = new DOMDocument;
 
-$xsl->load('./xslt/index.xsl');
+$xsl->load('../../xslt/DemonSouls.xsl');
 
 $proc = new XSLTProcessor;
 

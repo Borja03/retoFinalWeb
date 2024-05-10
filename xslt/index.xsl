@@ -30,12 +30,12 @@
 				<input type="checkbox" id="menu"/>
 				<label for="menu"><i class="fas fa-bars"></i></label>
 				<ul class="menuList">
-					<li><a href="#">Demon's Souls</a></li>
-					<li><a href="#">Dark Souls I</a></li>
-					<li><a href="#">Dark Souls II</a></li>
-					<li><a href="#">Dark Souls III</a></li>
-					<li><a href="#">Bloodborne</a></li>
-					<li><a href="./transform.php">Elden Ring</a></li>
+					<li><a href="./php/Transformations/demons souls.php">Demon's Souls</a></li>
+					<li><a href="./php/Transformations/dark souls1.php">Dark Souls I</a></li>
+					<li><a href="./php/Transformations/dark souls2.php">Dark Souls II</a></li>
+					<li><a href="./php/Transformations/dark souls3.php">Dark Souls III</a></li>
+					<li><a href="./php/Transformations/bloodborne.php">Bloodborne</a></li>
+					<li><a href="../php/Transformations/eldenring.php">Elden Ring</a></li>
 				</ul>
 			</div>
 		</nav>

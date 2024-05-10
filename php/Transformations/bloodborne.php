@@ -1,6 +1,6 @@
 <?php
 
-require_once("./ServerConexion/BDConexion.php");
+require_once("../../ServerConexion/BDConexion.php");
 
 try{
 $session = new Session();        
@@ -15,10 +15,11 @@ $xml->loadXML($xmlStr);
 
 $xsl = new DOMDocument;
 
-$xsl->load('./xslt/index.xsl');
+$xsl->load('../../xslt/BloodBorn.xsl');
 
 $proc = new XSLTProcessor;
 
+//$nameCard = $proc->getParameter('','nameCard');
 
 $proc->importStyleSheet($xsl); 
 
