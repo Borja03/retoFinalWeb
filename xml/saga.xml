@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<saga>
+    <juegos>
+        <!-- Game 1: Demon's Souls Remake -->
+        <juego id="DM">
+            <titulo>Demon's Souls Remake</titulo>
+            <descripcion>Demon's Souls Remake es un juego de rol de acción desarrollado por Bluepoint Games y Japan Studio. Es una recreación fiel del Demon's Souls original, un título innovador conocido por su jugabilidad desafiante y diseño atmosférico del mundo. Los jugadores se adentran en el reino de Boletaria, luchando contra temibles demonios y descubriendo los misterios de las Artes del Alma. Con gráficos mejorados, mecánicas de juego renovadas y un rendimiento mejorado, Demon's Souls Remake ofrece tanto a los recién llegados como a los veteranos una experiencia fresca e inmersiva.</descripcion>            
+            <fecha_salida>2020</fecha_salida>
+            <genero>Action RPG</genero>
+            <imagen>demon_souls_remake_image.jpg</imagen>
+            <premios>
+                <premio estado= "nominado">Premio BAFTA</premio>
+            </premios>
+        </juego>
+        
+        <!-- Game 2: Dark Souls -->
+        <juego id="DS1">
+            <titulo>Dark Souls</titulo>
+            <descripcion>Dark Souls es un juego de rol de acción desarrollado por FromSoftware. Ambientado en el reino de Lordran, los jugadores asumen el papel del Undead elegido, embarcándose en un viaje peligroso para tocar las Campanas del Despertar y cumplir su destino. Con su jugabilidad desafiante, diseño de niveles intrincado y una profunda historia, Dark Souls se ha convertido en un clásico del género de los juegos de rol de acción, conocido por su dificultad gratificante y su mundo atmosférico.</descripcion>            
+            <fecha_salida>2011</fecha_salida>
+            <genero>Action RPG</genero>
+            <imagen>dark_souls_image.jpg</imagen>
+            <premios>
+                <premio estado= "ganado">Golden Joystick Awards 2021 - Mejor videojuego de la historia</premio>
+                <premio estado= "nominado">Satellite Awards (International Press Academy) - Mejor juego de rol</premio>
+                <premio estado= "nominado">Spike Video Game Awards 2011 - Mejor juego de rol</premio>
+                <premio estado= "nominado">Spike Video Game Awards 2011 - Mejor trailer</premio>
+                <premio estado= "nominado">12º Game Developers Choice Awards - Mejor videojuego del año</premio>
+                <premio estado= "nominado">12º Game Developers Choice Awards - Mejor diseño de juego</premio>
+                <premio estado= "nominado">9º BAFTA Game Awards - Mejor juego de estrategia / simulación</premio>
+                <premio estado= "nominado">8º BAFTA Game Awards - Mejor juego de estrategia / simulación</premio>
+                <premio estado= "nominado">8º BAFTA Game Awards - Mejor multijugador</premio>
+                <premio estado= "nominado">National Academy of Video Game Trade Reviewers 2011 - Mejor videojuego del año</premio>
+                <premio estado= "nominado">National Academy of Video Game Trade Reviewers 2011 - Mejor juego de rol de franquicia</premio>
+            </premios>
+        </juego>
+
+        <!-- Game 3: Dark Souls II -->
+        <juego id="DS2">
+            <titulo>Dark Souls II</titulo>
+            <descripcion>Dark Souls II es un juego de rol de acción desarrollado por FromSoftware. Ambientado en la tierra maldita de Drangleic, los jugadores asumen el papel del Undead elegido, buscando una cura para su maldición mientras enfrentan innumerables desafíos y adversarios. Con su vasto mundo interconectado y mecánicas mejoradas, Dark Souls II ofrece una experiencia desafiante e inmersiva para los jugadores que buscan aventuras en el oscuro reino de fantasía.</descripcion>            
+            <fecha_salida>2014</fecha_salida>
+            <genero>Action RPG</genero>
+            <imagen>dark_souls_2_image.jpg</imagen>
+            <premio>
+                <premio estado= "nominado">Satellite Awards (International Press Academy) - Mejor juego de aventuras/acción</premio>
+                <premio estado= "nominado">The Game Awards 2014 - Mejor juego del año</premio>
+                <premio estado= "nominado">The Game Awards 2014 - Mejor juego de rol</premio>
+                <premio estado= "nominado">The Game Awards 2014 - Mejor experiencia online</premio>
+                <premio estado= "nominado">National Academy of Video Game Trade Reviewers 2014 - Mejor música dramática para franquicia</premio>
+                <premio estado= "nominado">National Academy of Video Game Trade Reviewers 2014 - Mejor jugabilidad en franquicia</premio>
+                <premio estado= "nominado">National Academy of Video Game Trade Reviewers 2014 - Mejor juego de rol de franquicia</premio>
+            </premio>
+        </juego>
+
+        <!-- Game 4: Dark Souls III -->
+        <juego id="DS3">
+            <titulo>Dark Souls III</titulo>
+            <descripcion>Dark Souls III es un juego de rol de acción ambientado en un mundo de fantasía oscura plagado por la maldición de los no muertos. Los jugadores atraviesan paisajes traicioneros, luchando contra enemigos grotescos y desafiando jefes en su búsqueda por enlazar la Primera Llama y evitar la Edad de la Oscuridad. Con su jugabilidad desafiante y su intrincada historia, Dark Souls III ofrece una experiencia profundamente gratificante para los valientes aventureros.</descripcion>
+            <fecha_salida>2016</fecha_salida>
+            <genero>Action RPG</genero>
+            <imagen>darksouls3_image.jpg</imagen>
+            <premios>
+                <premio estado= "ganado">Satellite Awards (International Press Academy) - Mejor juego de aventuras/acción</premio>
+                <premio estado= "ganado">20º Premios DICE - Mejor juego de rol</premio>
+                <premio estado= "nominado">The Game Awards 2016 - Mejor juego de rol</premio>
+                <premio estado= "nominado">National Academy of Video Game Trade Reviewers 2016 - Mejor videojuego del año</premio>
+                <premio estado= "nominado">National Academy of Video Game Trade Reviewers 2016 - Mejor música dramática para franquicia</premio>
+                <premio estado= "nominado">National Academy of Video Game Trade Reviewers 2016 - Mejor sonido en videojuego cinemático</premio>
+                <premio estado= "nominado">National Academy of Video Game Trade Reviewers 2016 - Mejor juego de rol de franquicia</premio>
+            </premios>
+        </juego>
+        
+        <!-- Game 5: Bloodborne -->
+        <juego id="BB">
+            <titulo>Bloodborne</titulo>
+            <descripcion>Bloodborne es un juego de rol de acción desarrollado por FromSoftware, exclusivamente para la PlayStation 4. Ambientado en la ciudad gótica de Yharnam, los jugadores asumen el papel de un Cazador encargado de desentrañar los misterios de la ciudad plagada de enfermedades y descubrir sus oscuros secretos. Con combates rápidos, diseño de niveles intrincado y una atmósfera inquietante, Bloodborne ofrece una experiencia desafiante e inolvidable para aquellos jugadores que buscan un viaje visceral hacia la locura.</descripcion>            
+            <fecha_salida>2015</fecha_salida>
+            <genero>Action RPG</genero>
+            <imagen>bloodborne_image.jpg</imagen>
+            <premios>
+                <premio estado= "ganado">Festival SXSW 2016 - Mejor diseño artístico en un videojuego</premio>
+                <premio estado= "ganado">12º BAFTA Game Awards - Mejor diseño de juego</premio>
+                <premio estado= "ganado">National Academy of Video Game Trade Reviewers 2015 - Mejor jugabilidad en IP original</premio>
+                <premio estado= "ganado">National Academy of Video Game Trade Reviewers 2015 - Mejor juego de acción original</premio>
+                <premio estado= "nominado">The Game Awards 2015 - Mejor juego del año</premio>
+                <premio estado= "nominado">The Game Awards 2015 - Mejor dirección artística</premio>
+                <premio estado= "nominado">The Game Awards 2015 - Mejor juego de rol</premio>
+                <premio estado= "nominado">The Game Awards 2014 - Juego más esperado</premio>
+                <premio estado= "nominado">19º Premios DICE - Juego del año</premio>
+                <premio estado= "nominado">19º Premios DICE - Mejor juego de rol</premio>
+                <premio estado= "nominado">16º Game Developers Choice Awards - Mejor videojuego del año</premio>
+                <premio estado= "nominado">16º Game Developers Choice Awards - Mejor diseño de juego</premio>
+                <premio estado= "nominado">16º Game Developers Choice Awards - Mejor diseño artístico</premio>
+                <premio estado= "nominado">12º BAFTA Game Awards - Mejor videojuego del año</premio>
+                <premio estado= "nominado">National Academy of Video Game Trade Reviewers 2015 - Mejor videojuego del año</premio>
+                <premio estado= "nominado">National Academy of Video Game Trade Reviewers 2015 - Mejor música dramática para IP original</premio>
+                <premio estado= "nominado">National Academy of Video Game Trade Reviewers 2015 - Mejor sonido en videojuego cinemático</premio>
+                <premio estado= "nominado">National Academy of Video Game Trade Reviewers 2015 - Mejor dirección de arte fantástica</premio>
+                <premio estado= "nominado">National Academy of Video Game Trade Reviewers 2015 - Mejor tecnología</premio>
+            </premios>
+                
+        </juego>
+
+        <!-- Game 6: Sekiro: Shadows Die Twice -->
+        <juego id="SK">
+            <titulo>Sekiro: Shadows Die Twice</titulo>
+            <descripcion>Sekiro: Shadows Die Twice es un juego de acción y aventuras desarrollado por FromSoftware. Ambientado en un Japón de finales del siglo XVI reimaginado, conocido como el período Sengoku, los jugadores asumen el papel de un shinobi conocido como Lobo, en busca de venganza contra un samurái que secuestró a su señor. Con un énfasis en el sigilo, combate preciso y travesía vertical, Sekiro ofrece una experiencia desafiante y gratificante para aquellos jugadores que buscan dominar el camino del shinobi.</descripcion>            
+            <fecha_salida>2019</fecha_salida>
+            <genero>Action-Adventure</genero>
+            <imagen>sekiro_image.jpg</imagen>
+            <premios>
+                <premio estado= "ganado">Festival SXSW 2020 - Mejor videojuego del año (ganadora)</premio>
+                <premio estado= "ganado">The Game Awards 2019 - Mejor juego de aventuras/acción (ganadora)</premio>
+                <premio estado= "ganado">The Game Awards 2019 - Mejor diseño de audio (ganadora)</premio>
+                <premio estado= "ganado">National Academy of Video Game Trade Reviewers 2019 - Mejor videojuego del año (ganadora)</premio>
+                <premio estado= "ganado">National Academy of Video Game Trade Reviewers 2019 - Mejor música dramática para IP original (ganadora)</premio>
+                <premio estado= "ganado">National Academy of Video Game Trade Reviewers 2019 - Mejor vestuario (ganadora)</premio>
+                <premio estado= "ganado">National Academy of Video Game Trade Reviewers 2019 - Mejor juego de acción original (ganadora)</premio>
+                <premio estado= "nominado">The Game Awards 2019 - Mejor juego del año</premio>
+                <premio estado= "nominado">The Game Awards 2019 - Mejor dirección</premio>
+                <premio estado= "nominado">The Game Awards 2019 - Mejor dirección artística</premio>
+                <premio estado= "nominado">23º Premios DICE - Mejor diseño de juego</premio>
+                <premio estado= "nominado">23º Premios DICE - Mejor juego de acción</premio>
+                <premio estado= "nominado">20º Game Developers Choice Awards - Mejor videojuego del año</premio>
+                <premio estado= "nominado">20º Game Developers Choice Awards - Mejor diseño de juego</premio>
+                <premio estado= "nominado">20º Game Developers Choice Awards - Mejor diseño artístico</premio>
+                <premio estado= "nominado">16º BAFTA Game Awards - Mejor videojuego del año</premio>
+                <premio estado= "nominado">16º BAFTA Game Awards - Mejor animación</premio>
+                <premio estado= "nominado">16º BAFTA Game Awards - Mejor diseño de juego</premio>
+                <premio estado= "nominado">16º BAFTA Game Awards - Logro técnico / Innovación</premio>
+                <premio estado= "nominado">National Academy of Video Game Trade Reviewers 2019 - Mejor guion en drama</premio>
+            </premios>
+        </juego>
+
+        <!-- Game 7: Elden Ring -->
+        <juego id="ER">
+            <titulo>Elden Ring</titulo>
+            <descripcion>Elden Ring es un próximo juego de rol de acción desarrollado por FromSoftware en colaboración con George R. R. Martin, conocido por su trabajo en A Song of Ice and Fire. Ambientado en un mundo vasto e interconectado, Elden Ring promete llevar los límites del género de juegos de rol de acción con su rica historia, jugabilidad desafiante y exploración dinámica de mundo abierto. Los jugadores emprenderán un viaje para descubrir la verdad detrás del Anillo de Elden y dar forma al destino de las Tierras Intermedias.</descripcion>            
+            <fecha_salida>TBD</fecha_salida>
+            <genero>Action RPG</genero>
+            <imagen>elden_ring_image.jpg</imagen>
+            <premios>
+                <premio estado= "ganado">The Game Awards 2022 - Mejor juego del año</premio>
+                <premio estado= "ganado">The Game Awards 2022 - Mejor dirección</premio>
+                <premio estado= "ganado">The Game Awards 2022 - Mejor narrativa</premio>
+                <premio estado= "ganado">The Game Awards 2022 - Mejor diseño de audio</premio>
+                <premio estado= "ganado">The Game Awards 2022 - Mejor juego de rol</premio>
+                <premio estado= "ganado">The Game Awards 2021 - Juego más esperado</premio>
+                <premio estado= "ganado">The Game Awards 2020 - Juego más esperado</premio>
+                <premio estado= "ganado">26º Premios DICE - Juego del año</premio>
+                <premio estado= "ganado">26º Premios DICE - Mejor dirección</premio>
+                <premio estado= "ganado">26º Premios DICE - Mejor diseño de juego</premio>
+                <premio estado= "ganado">26º Premios DICE - Logro técnico</premio>
+                <premio estado= "ganado">26º Premios DICE - Mejor juego de rol</premio>
+                <premio estado= "ganado">23º Game Developers Choice Awards - Mejor videojuego del año</premio>
+                <premio estado= "ganado">23º Game Developers Choice Awards - Mejor diseño de juego</premio>
+                <premio estado= "ganado">23º Game Developers Choice Awards - Mejor tecnología</premio>
+                <premio estado= "ganado">23º Game Developers Choice Awards - Mejor control en juego 3D</premio>
+                <premio estado= "ganado">23º Game Developers Choice Awards - Mejor juego de rol original</premio>
+                <premio estado= "ganado">New York Game Awards 2023 - Mejor videojuego del año</premio>
+                <premio estado= "ganado">New York Game Awards 2023 - Mejor mundo</premio>
+                <premio estado= "ganado">National Academy of Video Game Trade Reviewers 2022 - Mejor videojuego del año</premio>
+                <premio estado= "ganado">National Academy of Video Game Trade Reviewers 2022 - Mejor diseño de personaje</premio>
+                <premio estado= "ganado">National Academy of Video Game Trade Reviewers 2022 - Mejor iluminación o texturas</premio>
+                <premio estado= "ganado">National Academy of Video Game Trade Reviewers 2022 - Mejor dirección de arte histórica</premio>
+                <premio estado= "ganado">National Academy of Video Game Trade Reviewers 2022 - Mejor tecnología</premio>
+                <premio estado= "ganado">National Academy of Video Game Trade Reviewers 2022 - Mejor control en juego 3D</premio>
+                <premio estado= "ganado">Golden Joystick Awards 2022 - Mejor videojuego del año</premio>
+                <premio estado= "ganado">Golden Joystick Awards 2022 - Mejor juego de PlayStation</premio>
+                <premio estado= "ganado">Golden Joystick Awards 2022 - Premio de la crítica</premio>
+                <premio estado= "ganado">Golden Joystick Awards 2022 - Mejor diseño visual</premio>
+                <premio estado= "ganado">Golden Joystick Awards 2022 - Mejor juego multijugador</premio>
+                <premio estado= "ganado">Golden Joystick Awards 2021 - Videojuego más esperado</premio>
+                <premio estado= "ganado">Premios Equinox 2022 - Mejor videojuego del año</premio>
+                <premio estado= "ganado">Premios Equinox 2022 - Mejor videojuego de Xbox</premio>
+                <premio estado= "ganado">Premios Equinox 2022 - Mejor videojuego de PC</premio>
+                <premio estado= "ganado">Premios Equinox 2022 - Mejor dirección artística</premio>
+                <premio estado= "ganado">Premios Equinox 2022 - Mejor diseño de audio</premio>
+                <premio estado= "ganado">Premios Equinox 2022 - Mejor juego de acción / aventura</premio>
+                <premio estado= "ganado">Premios Equinox 2022 - Mejor juego de rol</premio>
+                <premio estado= "ganado">Premios Equinox 2022 - Mejor juego de mundo abierto</premio>
+                <premio estado= "nominado">The Game Awards 2022 - Mejor dirección</premio>
+                <premio estado= "nominado">The Game Awards 2022 - Mejor narrativa</premio>
+                <premio estado= "nominado">The Game Awards 2022 - Mejor banda sonora</premio>
+                <premio estado= "nominado">The Game Awards 2022 - Mejor diseño de audio</premio>
+                <premio estado= "nominado">The Game Awards 2022 - Mejor diseño artístico</premio>
+                <premio estado= "nominado">26º Premios DICE - Mejor historia</premio>
+                <premio estado= "nominado">26º Premios DICE - Mejor animación</premio>
+                <premio estado= "nominado">23º Game Developers Choice Awards - Mejor audio</premio>
+                <premio estado= "nominado">23º Game Developers Choice Awards - Mejor diseño artístico</premio>
+                <premio estado= "nominado">19º BAFTA Game Awards - Mejor videojuego del año</premio>
+                <premio estado= "nominado">19º BAFTA Game Awards - Mejor diseño de juego</premio>
+                <premio estado= "nominado">19º BAFTA Game Awards - Premio a la Innovación</premio>
+                <premio estado= "nominado">Golden Joystick Awards 2022 - Mejor juego de rol</premio>
+                <premio estado= "nominado">Golden Joystick Awards 2022 - Mejor música</premio>
+                <premio estado= "nominado">Golden Joystick Awards 2022 - Logro artístico</premio>
+                <premio estado= "nominado">Golden Joystick Awards 2022 - Logro técnico / Innovación</premio>
+                <premio estado= "nominado">Golden Joystick Awards 2022 - Mejor multijugador</premio>
+                <premio estado= "nominado">New York Game Awards 2023 - Mejor narrativa</premio>
+                <premio estado= "nominado">New York Game Awards 2023 - Mejor dirección artística</premio>
+                <premio estado= "nominado">New York Game Awards 2023 - Mejor banda sonora</premio>
+                <premio estado= "nominado">Premios Equinox 2022 - Mejor narrativa</premio>
+            </premios>
+        </juego>
+    </juegos>
+
+    <bosses>
+        <!-- Jefes de Demon's Souls -->
+        <boss id="01" juego="DM">
+            <nombre>Phalanx</nombre>
+            <genero>otros</genero>
+            <descripcion>Phalanx es el primer jefe importante que se encuentra en Demon's Souls, ubicado en el Palacio de Boletaria. Consiste en una masa de criaturas más pequeñas que rodean un núcleo más grande y vulnerable. Los jugadores deben idear estrategias para superar sus defensas y revelar sus puntos débiles para salir victoriosos.</descripcion>
+            <armas>
+                <arma>lanzas</arma>
+                <arma>escudos</arma>
+            </armas>
+            <imagen>phalanx_image.jpg</imagen>
+            <localizacion>Palacio de Boletaria</localizacion>
+        </boss>
+
+        <boss id="02" juego="DM">
+            <nombre>Torre del Caballero</nombre>
+            <genero>masculino</genero>
+            <descripcion>La Torre del Caballero es un colosal caballero vestido con armadura pesada, que guarda las puertas del Palacio de Boletaria. Protegido por un escudo masivo y empuñando una lanza gigante, representa un desafío formidable para cualquiera que se atreva a enfrentarlo. Los jugadores deben encontrar formas de pasar por sus defensas y golpear sus puntos débiles para derrotarlo.</descripcion>
+            <armas>
+                <arma>Gran Escudo</arma>
+                <arma>Gran Lanza</arma>
+            </armas>
+            <imagen>torre_del_caballero_image.jpg</imagen>
+            <localizacion>Palacio de Boletaria</localizacion>
+        </boss>
+
+        <boss id="03" juego="DM">
+            <nombre>Juez</nombre>
+            <genero>otros</genero>
+            <descripcion>El Juez es una criatura grotesca adorada como una deidad por los habitantes depravados del Santuario de Tormentas. Con su enorme tamaño y un hacha gigante incrustada en su estómago, infunde temor en los corazones de aquellos que lo enfrentan. Los jugadores deben explotar sus debilidades y golpear sus puntos vulnerables para derrotarlo.</descripcion>
+            <armas>
+                <arma>Hacha Gigante</arma>
+            </armas>
+            <imagen>juez_image.jpg</imagen>
+            <localizacion>Santuario de Tormentas</localizacion>
+        </boss>
+
+        <!-- Jefes de Dark Souls -->
+        <boss id="04" juego="DS1">
+            <nombre>Asylum Demon</nombre>
+            <genero>otros</genero>
+            <descripcion>El Asylum Demon es el primer jefe que encuentran los jugadores en Dark Souls, encontrado en el Asylum del Norte. Con su gran tamaño y fuerza bruta, representa un desafío formidable para los no preparados. Los jugadores deben aprender a esquivar sus ataques y buscar oportunidades para contraatacar para vencerlo.</descripcion>
+            <armas>
+                <arma>Gran Mazo</arma>
+            </armas>
+            <imagen>asylum_demon_image.jpg</imagen>
+            <localizacion>Asylum del Norte</localizacion>
+        </boss>
+
+        <boss id="05" juego="DS1">
+            <nombre>Ornstein y Smough</nombre>
+            <genero>otros</genero>
+            <descripcion>Ornstein y Smough son dos jefes que se encuentran en Anor Londo, protegiendo la entrada al Senado de los dioses. Ornstein, el Caballero Dragón, es rápido y ágil, mientras que Smough, el Ejecutor, es lento pero poderoso. Juntos, forman uno de los encuentros más desafiantes en Dark Souls, requiriendo estrategia y habilidad para superarlos.</descripcion>
+            <armas>
+                <arma>Alabarda de Ornstein</arma>
+                <arma>Martillo de Smough</arma>
+            </armas>
+            <imagen>ornstein_y_smough_image.jpg</imagen>
+            <localizacion>Anor Londo</localizacion>
+        </boss>
+
+        <boss id="06" juego="DS1">
+            <nombre>Gwyn, Señor de la Ceniza</nombre>
+            <genero>masculino</genero>
+            <descripcion>Gwyn, Señor de la Ceniza, es el último jefe de Dark Souls, encontrado en el Kiln del Primer Fuego. Una vez un poderoso señor que sacrificó todo para prolongar la Era del Fuego, Gwyn ahora está consumido por la locura y la oscuridad. En su forma ardiente, representa el último obstáculo para aquellos que buscan determinar el destino del mundo.</descripcion>
+            <armas>
+                <arma>Gran Espada</arma>
+            </armas>
+            <imagen>gwyn_señor_de_la_ceniza_image.jpg</imagen>
+            <localizacion>Kiln del Primer Fuego</localizacion>
+        </boss>
+
+        <!-- Jefes de Dark Souls II -->
+        <boss id="07" juego="DS2">
+            <nombre>El Último Gigante</nombre>
+            <genero>otros</genero>
+            <descripcion>El Último Gigante es uno de los primeros jefes que los jugadores encuentran en Dark Souls II, ubicado en el Bosque de los Gigantes Caídos. Una vez un coloso imponente, ahora está lleno de dolor y rabia. Los jugadores deben enfrentarse a esta criatura gigantesca y encontrar su punto débil para derrotarlo.</descripcion>
+            <armas>
+                <arma>Garras Gigantes</arma>
+            </armas>
+            <imagen>ultimo_gigante_image.jpg</imagen>
+            <localizacion>Bosque de los Gigantes Caídos</localizacion>
+        </boss>
+
+        <boss id="08" juego="DS2">
+            <nombre>Velstadt, el Guardián Real</nombre>
+            <genero>masculino</genero>
+            <descripcion>Velstadt, el Guardián Real, es un jefe encontrado en el Aliento del Dragón, protegiendo la entrada al Castillo de Drangleic. Con su armadura oscura y su martillo gigante, representa una fuerza imponente que desafía a los intrusos. Los jugadores deben superar su resistencia y habilidades para vencerlo.</descripcion>
+            <armas>
+                <arma>Martillo Real</arma>
+            </armas>
+            <imagen>velstadt_el_guardian_real_image.jpg</imagen>
+            <localizacion>Aliento del Dragón</localizacion>
+        </boss>
+
+        <!-- Bosses for Bloodborne -->
+        <boss id="09" juego="Bloodborne">
+            <nombre>La Bestia Clérigo</nombre>
+            <genero>masculino</genero>
+            <lore>La Bestia Clérigo es uno de los primeros jefes que los cazadores encuentran en Bloodborne. Antes un clérigo honorable, cayó en la locura y se convirtió en una grotesca criatura. Ahora acecha en las sombras de la ciudad de Yharnam, sediento de sangre y listo para destrozar a cualquier intruso que se atreva a desafiarlo.</lore>
+            <armas>
+                <arma>Maza Clérigo</arma>
+            </armas>
+            <imagen>bestia_clerigo_image.jpg</imagen>
+            <localizacion>Central Yharnam</localizacion>
+        </boss>
+
+        <boss id="10" juego="Bloodborne">
+            <nombre>Padre Gascoigne</nombre>
+            <genero>masculino</genero>
+            <lore>Padre Gascoigne era un cazador de la Iglesia de la Sanación que, después de sucumbir a la enfermedad de la bestia, se convirtió en uno de los más temibles jefes de Bloodborne. Acecha en las calles de Yharnam, cazando a los incautos y desafiando a los cazadores con su ferocidad desenfrenada.</lore>
+            <armas>
+                <arma>Hacha de Caza</arma>
+                <arma>Pistola de Sangre</arma>
+            </armas>
+            <imagen>padre_gascoigne_image.jpg</imagen>
+            <localizacion>Distrito de las Tumbas</localizacion>
+        </boss>
+
+        <boss id="11" juego="Bloodborne">
+            <nombre>El Huérfano Cosmico</nombre>
+            <genero>otros</genero>
+            <lore>El Huérfano Cosmico es uno de los jefes más desafiantes y aterradores que los cazadores encuentran en Bloodborne. Como un ser nacido de la Gran Necesidad y abandonado en el Sueño del Cazador, su llanto resonante y su violencia desenfrenada representan una amenaza para todo Yharnam. Los cazadores valientes deben enfrentarse a esta criatura cósmica y poner fin a su sufrimiento.</lore>
+            <armas>
+                <arma>Orbe Cósmico</arma>
+                <arma>Placenta Inhumana</arma>
+            </armas>
+            <imagen>huerfano_cosmico_image.jpg</imagen>
+            <localizacion>Costa de la Pesadilla de la Caza</localizacion>
+        </boss>
+        
+        <!-- Bosses for Dark Souls III -->
+        <boss id="12" juego="DS3">
+            <nombre>Abyss Watchers</nombre>
+            <genero>masculino</genero>
+            <lore>Los Vigilantes del Abismo eran un grupo de guerreros no muertos que juraron proteger el Abismo de la maldición de la legión de no muertos. Sin embargo, con el tiempo, la maldición los consumió y se convirtieron en enemigos. Ahora, luchan entre sí en una eterna danza mortal, defendiendo el Abismo con una ferocidad imparable.</lore>
+            <armas>
+                <arma>Espada de Fuego</arma>
+                <arma>Guadaña de las Sombras</arma>
+            </armas>
+            <imagen>abyss_watchers_image.jpg</imagen>
+            <localizacion>Catacumbas de Carthus</localizacion>
+        </boss>
+
+        <boss id="13" juego="DS3">
+            <nombre>Dragón Aliento de Fuego</nombre>
+            <genero>otros</genero>
+            <lore>El Dragón Aliento de Fuego es un antiguo dragón que acecha en lo más profundo de la Fortaleza de Lothric. Con su aliento abrasador y su inmenso poder, representa una amenaza para los intrusos que se aventuran en su guarida. Los valientes guerreros deben enfrentarse a esta bestia antigua y poner fin a su reinado de fuego.</lore>
+            <armas>
+                <arma>Alas de Fuego</arma>
+                <arma>Garras Ardientes</arma>
+            </armas>
+            <imagen>dragon_aliento_de_fuego_image.jpg</imagen>
+            <localizacion>Fortaleza de Lothric</localizacion>
+        </boss>
+
+        <boss id="14" juego="DS3">
+            <nombre>Príncipe Lorian y Lothric, Hermanos Gemelos</nombre>
+            <genero>otros</genero>
+            <lore>Lorian, el Príncipe Maldito, y su hermano Lothric, el Príncipe Hechicero, son dos jefes gemelos que defienden el Castillo de Lothric. Unidos en un vínculo maldito, estos hermanos se enfrentan a los intrusos con su formidable poder y habilidades mágicas. Para derrotarlos, los guerreros deben superar su conexión y vencer a ambos en combate.</lore>
+            <armas>
+                <arma>Espada de Lorian</arma>
+                <arma>Escudo de Lothric</arma>
+                <arma>Magia de Lothric</arma>
+            </armas>
+            <imagen>principe_lorian_y_lothric_image.jpg</imagen>
+            <localizacion>Gran Salón de la Torre</localizacion>
+        </boss>
+
+        <!-- Bosses for Sekiro -->
+        <boss id="15" juego="SK">
+            <nombre>Genichiro Ashina</nombre>
+            <genero>masculino</genero>
+            <lore>Genichiro Ashina es el líder del clan Ashina y uno de los principales antagonistas en Sekiro. Un espadachín habilidoso y decidido, busca la inmortalidad a través del poder del Dragón Divino. Después de múltiples encuentros, se convierte en uno de los desafíos más difíciles para el Lobo de un solo brazo, poniendo a prueba su habilidad en el combate.</lore>
+            <armas>
+                <arma>Katana de Ashina</arma>
+                <arma>Arcos y Flechas</arma>
+            </armas>
+            <imagen>genichiro_ashina_image.jpg</imagen>
+            <localizacion>Castillo Ashina</localizacion>
+        </boss>
+
+        <boss id="16" juego="SK">
+            <nombre>Guardián del Mono Divino</nombre>
+            <genero>otros</genero>
+            <lore>El Guardián del Mono Divino es un jefe imponente que protege la entrada a las profundidades del Valle del Mono. Una vez un simple mono, fue corrompido por el poder del Dragón Divino y se transformó en una bestia temible. Su agilidad y astucia representan un desafío único para aquellos que buscan adentrarse en lo desconocido.</lore>
+            <armas>
+                <arma>Garras Afiladas</arma>
+                <arma>Grito Aterrador</arma>
+            </armas>
+            <imagen>guardian_del_mono_divino_image.jpg</imagen>
+            <localizacion>Valle del Mono</localizacion>
+        </boss>
+
+        <boss id="17" juego="SK">
+            <nombre>Isshin, el Espadachín Santo</nombre>
+            <genero>masculino</genero>
+            <lore>Isshin, el Espadachín Santo, es un guerrero legendario y el abuelo adoptivo de Genichiro Ashina. A pesar de su avanzada edad, posee una habilidad incomparable en el arte del combate. Desafiando al Lobo en un duelo final, Isshin se convierte en una prueba suprema de habilidad y determinación.</lore>
+            <armas>
+                <arma>Katana Sagrada</arma>
+                <arma>Lanza Divina</arma>
+            </armas>
+            <imagen>isshin_el_espadachin_santo_image.jpg</imagen>
+            <localizacion>Torre del Cielo</localizacion>
+        </boss>
+
+        <!-- Bosses for Elden Ring -->
+        <boss id="18" juego="ER">
+            <nombre>Malenia, la Reina de la Noche</nombre>
+            <genero>femenino</genero>
+            <lore>Malenia, la Reina de la Noche, es una poderosa hechicera que gobierna sobre las sombras del Reino de Erdtree. Con su magia oscura y su ejército de criaturas tenebrosas, busca expandir su influencia y sumir el mundo en una eterna oscuridad. Aquellos que desafían su dominio deben enfrentarse a su formidable poder y astucia.</lore>
+            <armas>
+                <arma>Cetro Oscuro</arma>
+                <arma>Magia de las Sombras</arma>
+            </armas>
+            <imagen>malenia_la_reina_de_la_noche_image.jpg</imagen>
+            <localizacion>Torre de las Sombras</localizacion>
+        </boss>
+
+        <boss id="19" juego="ER">
+            <nombre>Raiken, el Coloso de Hierro</nombre>
+            <genero>otros</genero>
+            <lore>Raiken, el Coloso de Hierro, es una antigua construcción de metal animada por la voluntad de los Antiguos. Como guardián de un ancestral santuario, vigila las tierras baldías con su imponente presencia y su fuerza descomunal. Los intrépidos aventureros deben enfrentarse a este gigante de hierro y descubrir su punto débil para derrotarlo.</lore>
+            <armas>
+                <arma>Gran Mazo de Hierro</arma>
+                <arma>Escudo Gigante</arma>
+            </armas>
+            <imagen>raiken_el_coloso_de_hierro_image.jpg</imagen>
+            <localizacion>Desierto de Hierro</localizacion>
+        </boss>
+
+        <boss id="20" juego="ER">
+            <nombre>Varin, el Señor del Veneno</nombre>
+            <genero>masculino</genero>
+            <lore>Varin, el Señor del Veneno, es un antiguo dragón venenoso que ha hecho su guarida en las profundidades de un oscuro pantano. Con su aliento tóxico y sus garras envenenadas, infunde terror en aquellos que se aventuran en su dominio. Los valientes héroes deben superar su resistencia al veneno y enfrentarse a este monstruo reptiliano.</lore>
+            <armas>
+                <arma>Aliento Tóxico</arma>
+                <arma>Garras Envenenadas</arma>
+            </armas>
+            <imagen>varin_el_señor_del_veneno_image.jpg</imagen>
+            <localizacion>Pantano de las Sombras</localizacion>
+        </boss>
+
+    </bosses>
+</saga>
