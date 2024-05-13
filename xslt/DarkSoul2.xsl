@@ -19,7 +19,7 @@
     
             <nav>
                 <div class="container">
-                    <a href="#" class="logo">
+                    <a href="../../index.php" class="logo">
                       <img src="../../images/logo.png"/>
                     </a>
                     
@@ -52,7 +52,7 @@
     <p><strong>Description:</strong> <xsl:value-of select="descripcion"/></p>
     <p><strong>Release Year:</strong> <xsl:value-of select="fecha_salida"/></p>
     <p><strong>Genre:</strong> <xsl:value-of select="genero"/></p>
-    <p><img src="{imagen}" alt="Game Image"/></p>
+    <p><img src="{concat('../../images/', imagen)}" alt="Game Image"/></p>
     
     <!-- Table for awards -->
     <h3>Awards</h3>

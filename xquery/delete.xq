@@ -2,7 +2,6 @@
 
 declare variable $selectSet external := $selectSet;
 
-delete node
-/unmatched/sets/set[@id=$selectSet]
+delete node //boss[@id=$selectSet]
 
 

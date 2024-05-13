@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto </title>
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="../css/style.css"/>
+  </head>
+  <body>
+    <header>
+      <div class="top"></div>
+      <nav>
+        <div class="container">
+          <a href="../index.php" class="logo">
+            <img src="../images/logo.png"/>
+          </a>
+          <input type="checkbox" id="menu"/>
+          <label for="menu"><i class="fas fa-bars"></i></label>
+          <ul class="menuList">
+            <li><a href="../php/Transformations/demons souls.php">Demon's Souls</a></li>
+            <li><a href="../php/Transformations/bloodborne.php">Bloodborne</a></li>
+            <li><a href="../php/Transformations/eldenring.php">Elden Ring</a></li>
+            <li><a href="../php/Transformations/sekiro.php">Sekiro Shadows</a></li>
+            
+            <div class="dropdown">
+              <a>Dark Souls</a>
+              <div class="dropdown-content">
+                <li><a href="../php/Transformations/dark souls1.php">Dark Souls I</a></li>
+                <li><a href="../php/Transformations/dark souls2.php">Dark Souls II</a></li>
+                <li><a href="../php/Transformations/dark souls3.php">Dark Souls III</a></li>
+              </div>
+            </div>
+            <li><a href="./contact.html">Contact Us</a></li>
+
+
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--end of header -->
+
+
+    <section class="contact">
+        <h2> Contactanos</h2>
+        <div class="main-contact">
+            <aside class="left">
+
+                <div class="about">
+                    <h3>Acerca de <span>A E E O</span></h3>
+                    <p><span>A</span>LIN</p>
+                    <p><span>E</span>LBIRE</p>
+                    <p><span>E</span>NZO</p>
+                    <p><span>O</span>MAR</p>
+                </div>
+
+                <div class="find">
+                    <h3>Localizarnos</h3>
+                    <img src="./images/maps.png" alt="image of local adress">
+                </div>
+
+
+            </aside>
+
+
+            <aside class="right">
+                <form method="post">
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="usuarioEmail" id="email" placeholder="Email" size="30" required
+                            maxlength="40">
+                    </div>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="usuarionombre" id="nombre" placeholder="Nombre" size="30" required maxlength="40">
+                    </div>
+
+
+                    <div>
+                        <label for="date">Fecha de nacimiento:</label>
+                        <input type="date" id="date" min="1950-01-01" max="2500-01-01">
+                    </div>
+
+                    <br>
+                    <div>
+                        <label for="genero">Sexo:</label>
+                        <input type="radio" name="genero" value="hombre" id="hombre">
+                        <label for="hombre">Hombre</label>
+                        <input type="radio" name="genero" value="mujer" id="mujer">
+                        <label for="mujer">Mujer</label>
+                    </div>
+
+
+
+                    <div>
+                        <label>Tipo de letra</label>
+                        <select>
+                            <option value="shrak1">About shrek 1</option>
+                            <option value="shrak2">About shrek 2</option>
+                            <option value="shrak3">About shrek 3</option>
+                            <option value="shrak4">About shrek 4</option>
+                            <option value="shrak4">About gato 1</option>
+                            <option value="shrak4">About gato 2</option>
+
+
+                        </select>
+                    </div>
+
+
+                    <div>
+                        <label>Text :</label>
+                        <textarea rows="10" cols="70" name="textoLargo" wrap="hard"
+                            placeholder="Puedes añadir lo que quieras:"></textarea>
+                    </div>
+
+                    <div>
+                        <input type="reset" value="Limpiar datos">
+                        <input type="submit" value="Enviar datos">
+                    </div>
+
+                </form>
+
+            </aside>
+        </div>
+    </section>
+
+
+
+    <!--footer creditos-->
+
+    <!--end of footer-->
+</body>
+
+</html>

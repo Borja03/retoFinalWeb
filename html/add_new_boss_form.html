@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add new boss</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+	  <script src="../../script/scriptform1.js"></script>
+    </head>
+    <body>
+        <!-- Header and menu here-->
+		
+
+
+		<form action="../php/BDAccessInsert.php" method="get">
+            <!-- Title -->
+            <h2>Insert new boss</h2>
+            <label for="juego">Juego:</label>
+            <select id="juego" name="juego" required>
+                <!-- Options will be populated dynamically using JavaScript -->
+            </select><br><br>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+        
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero" required>
+                <option value="femenino">Femenino</option>
+                <option value="masculino">Masculino</option>
+                <!-- Add more options if needed -->
+            </select><br><br>
+        
+            <label for="lore">Lore:</label><br>
+            <textarea id="lore" name="lore" rows="4" cols="50" required></textarea><br><br>
+        
+            <label for="arma1">Arma 1:</label>
+            <input type="text" id="arma1" name="arma1" required><br><br>
+        
+            <label for="arma2">Arma 2:</label>
+            <input type="text" id="arma2" name="arma2" required><br><br>
+            
+            <label for="localizacion">Localización:</label>
+            <input type="text" id="localizacion" name="localizacion" required><br><br>
+        
+
+            <label for="imagen">Imagen:</label>
+            <input type="file" id="imagen" name="imagen" accept="image/*" required><br><br>
+        
+
+            
+            <!-- Hidden input field to include the ID -->
+            <!-- <input type="hidden" id="id" name="id"> -->
+        
+            <button type="submit">Submit</button>
+        </form>        
+            <script>
+                // Fetch saga.xml file and populate form
+                fetch('../xml/saga.xml')
+                    .then(response => response.text())
+                    .then(data => {
+                        const parser = new DOMParser();
+                        const xmlDoc = parser.parseFromString(data, 'text/xml');
+                        const bosses = xmlDoc.getElementsByTagName('boss');
+                        let largestID = 0;
+                        for (let i = 0; i < bosses.length; i++) {
+                            const bossID = parseInt(bosses[i].getAttribute('id'));
+                            if (bossID > largestID) {
+                                largestID = bossID;
+                            }
+                        }
+                        document.getElementById('id').value = largestID + 1; // Set the value of the hidden input field
+                    })
+                    .catch(error => console.error('Error fetching XML:', error));
+                      // Populate the dropdown menu for the "juego" attribute
+        var juegosId = ["DM", "DS1", "DS2", "DS3", "BB", "ER"];
+        var juegos = ["Demon's Souls Remake", "Dark Souls", "Dark Souls II", "Dark Souls III", "Bloodborne", "Elden Ring"];
+
+        var juegoDropdown = document.getElementById("juego");
+        juegos.forEach(function(juego, index) {
+            var option = document.createElement("option");
+            option.text = juego;
+            option.value = juegosId[index]; // Set the value to the corresponding ID
+            juegoDropdown.add(option);
+        });
+
+        // Function to get the ID of the selected juego
+        function getJuegoId(juegoName) {
+            var index = juegos.indexOf(juegoName);
+            if (index !== -1) {
+                return juegosId[index];
+            } else {
+                console.error("Juego not found:", juegoName);
+                return null;
+            }
+        }
+
+        </script>
+
+
+    </body>
+</html>

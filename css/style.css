@@ -1,35 +1,53 @@
-*{
+@font-face {
+	font-family: 'bloodBorn';
+	src: url(../font/Fleshandblood-MVA5x.ttf);
+
+
+	/* Add additional font formats if necessary */
+}
+
+
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: sans-serif;
+	/*font-family: sans-serif;*/
+	font-family: bloodBorn;
 }
-ul{
+
+ul {
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
 }
-a{
+
+a {
 	display: block;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 1.2em;
+	/*font-size: 1.2em;*/
+	font-size: 1em;
+	font-weight: bolder;
 	transition: .3s;
 }
 
 
-header{
+header {
 	top: 0;
 	left: 0;
 	padding-bottom: 200px;
 	position: fixed;
 	width: 100%;
+
+
 }
-.top{
-	background: #333;
+
+.top {
+	background-color: #000000;
 	padding: 20px 0;
 }
-.container{
+
+.container {
 	position: relative;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -37,174 +55,383 @@ header{
 	justify-content: space-between;
 	align-items: center;
 }
-.top ul li{
+
+.top ul li {
 	margin-right: 15px;
 }
-.top ul li a{
+
+.top ul li a {
 	color: #fff;
 }
-.top ul li a:hover{
-	color: #a70202;
+
+.top ul li a:hover {
+	color: #fbfbfb;
 }
-nav{
-	background: #333;
+
+nav {
+	background-color: #000000;
 	padding-top: 100px;
 	position: relative;
 	padding: 27px 0;
-	z-index: 999;
+	z-index: 9999;
 }
-.logo{
+
+.logo {
 	position: absolute;
 	width: 150px;
 	height: 150px;
-	top: -60px;
-	left: 40.5%;
+	/*top: -60px;
+	left: 40.5%;*/
+	top: -65px;
+	left: 40%;
 }
-nav ul{
+
+nav ul {
 	width: 100%;
 	transition: .3s;
 }
-nav ul li:nth-child(4){
+
+nav ul li:nth-child(4) {
 	margin-left: 250px;
 }
 
 
-nav ul li a{
-	color: rgb(146, 91, 15);
+nav ul li a {
+	color: rgb(255, 0, 0);
 	font-weight: bold;
 }
-nav ul li a:hover{
-	color: #401916;
+
+nav ul li a:hover {
+	color: #fefefe;
 }
-#menu{
+
+#menu {
 	display: none;
 }
-.section{
-	color:width;
+
+.section {
+	color: width;
+}
+
+.dropdown {
+	display: inline-block;
+}
+
+.dropdown a {
+	color: #ff0000;
+
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #333;
+	min-width: 100px;
+	width: 200px;
+	margin-left: -35px;
+}
+
+.dropdown-content a {
+	color: #ff0000;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+
+}
+
+.dropdown-content a:hover {
+	background-color: #333;
+	color: #fefefe;
+
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
 }
 
 
-.empty{
-    padding-top: 95px; /* Add space equal to the height of the fixed header */
-    margin: auto;
+.empty {
+	padding-top: 95px;
+	/* Add space equal to the height of the fixed header */
+	margin: auto;
 	width: 80%;
 	height: 125px;
 	margin: auto;
 }
 
-.main{
+.main {
 	background-color: #EEEEEE;
 	height: fit-content;
 	width: 80%;
 	margin: auto;
+	padding-bottom: 30px;
+	margin-bottom: -50px;
 }
 
+.gameInfo {
+	background-color: #0202a7;
+	padding-bottom: 100px;
+}
+
+.awards {
+	background-color: #a70202;
+	padding-bottom: 100px;
+}
+
+.bosses {
+	background-color: #02a75d;
+	padding-bottom: 100px;
+}
+
+/* other test */
+
+.boss-card-container {
+	display: flex;
+	flex-wrap: wrap;
+	max-height: fit-content;
+	justify-content: center;
+}
+
+.boss-card {
+    width: 350px;
+    text-align: center;
+    height:550px;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px 5px #401916;
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    background-color: #999;
+    margin-top: 20px;
+}
+
+.boss-title {
+    width: 100%; /* Title width matches card width */
+    background-color: #333;
+    color: #ff0000;
+    font-size: 1.3em;
+    font-weight: 900;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.boss-image {
+    height: 300px; /* Height of the image */
+    width: 100%; /* Image width matches card width */
+}
+
+.boss-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.boss-details {
+	font-size: 20px;
+	text-align: left;
+    flex: 1; /* Grow to fill remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align text at the bottom */
+    padding: 10px;
+}
+
+/* to be used in next pages 
+.boss-card {
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px #401916;
+    display: flex;
+    padding: 20px;
+    background-color: yellowgreen;
+    margin-top: 20px;
+}
+
+.boss-image {
+    margin-right: 20px;
+}
+
+.boss-image img {
+    width: 60px;
+    height: 60px;
+}
+
+.boss-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.boss-title {
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #a70202;
+}
+
+.boss-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.boss-game {
+    background-color: #a74f02;
+}
+
+.boss-desc {
+    background-color: #523636;
+}
+
+.boss-location {
+    background-color: #15a702;
+}
+
+.boss-gender {
+    background-color: #705a5a;
+}
+
+.boss-weapon {
+    background-color: #5e2491;
+}
+
+.boss-card img {
+    background-color: #02a762;
+}
+*/
 /* transformation tables css */
 
 table {
 	border-collapse: collapse;
-	width: 100%;
-  }
-  th, td {
+	width: 90%;
+	margin: auto;
+}
+
+th,
+td {
 	border: 1px solid #dddddd;
 	text-align: left;
 	padding: 8px;
-  }
-  th {
+}
+
+th {
 	background-color: #f2f2f2;
-  }
+}
 
-  /* css footer */
+/* css footer */
 
-  footer {
-    background-color: rgb(54, 46, 46);
-    text-align: center;
-    font-size: 14px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 50px;
-  }
-  .topFooter {
-    flex-basis: 100%;
-    height: fit-content;
-    background-color: rgb(54, 46, 46);
-    margin-top: 10px;
-    margin-bottom: 10px;
+footer {
+	background-color: rgb(0, 0, 0);
+	text-align: center;
+	font-size: 14px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 50px;
+}
 
-  }
-  
+.topFooter {
+	flex-basis: 100%;
+	height: fit-content;
+	background-color: rgb(54, 46, 46);
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
 
 .middleFooter {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .rectangleLeft,
-  .rectangleRight {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .rectangleLeft img,
-  .rectangleRight img {
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto; /* This centers the image within its container */
-  }
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.rectangleLeft,
+.rectangleRight {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rectangleLeft img,
+.rectangleRight img {
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+	/* This centers the image within its container */
+}
 
 
 
-  .bottomFooter {
+.bottomFooter {
     padding-top: 20px;
     width: 100%;
-    height: 60px;
-  }
-  
-  .bottomFooter p {
-        padding: 10px;
-        text-align: center;
- }
+    height: 50px;
+    background-color: #333;
+    text-align: center;
+    font-size: 14px;
+    bottom: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+	padding-bottom: 30px;
+}
+
+.bottomFooter p {
+    color: #E9E5D6;
+    padding: 20px;
+}
+
+.bottomFooter span {
+    color: red;
+}
+/* cards in footer */ 
 
 
+
+/* ends of card  in footer */
 
 
 
 /* control small size*/
 
-label{
+label {
 	color: #fff;
 	font-size: 1.2em;
 	padding: 15px 0;
 	display: none;
 }
 
-@media (max-width: 960px){
-	label{
+@media (max-width: 960px) {
+	label {
 		display: block;
 	}
-	.container{
+
+	.container {
 		padding: 0 40px;
 	}
+
 	.social li:nth-child(1),
-	.social li:nth-child(2){
+	.social li:nth-child(2) {
 		display: none;
 	}
-	.logo{
+
+	.logo {
 		left: 38%;
 		top: -60px;
 	}
-	.logo img{
+
+	.logo img {
 		width: 150px;
 		height: 133px;
 	}
-	nav{
+
+	nav {
 		padding: 0;
 	}
-	nav ul{
+
+	nav ul {
 		position: absolute;
 		top: 50px;
 		left: -100%;
@@ -215,28 +442,34 @@ label{
 		width: 100%;
 		height: 100vh;
 	}
-	#menu:checked ~ ul{
+
+	#menu:checked~ul {
 		left: 0;
 	}
-	nav ul li{
+
+	nav ul li {
 		margin: 0 !important;
 		width: 100%;
 	}
-	nav ul li a{
+
+	nav ul li a {
 		border: 1px solid #724d4a;
 		padding: 15px 0;
 		margin: 10px 0;
 		text-align: center;
 	}
-	nav ul li a:hover{
+
+	nav ul li a:hover {
 		background: rgb(65, 65, 2);
 	}
 }
-@media (max-width: 460px){
-	.logo{
+
+@media (max-width: 460px) {
+	.logo {
 		top: -30px;
 	}
-	.logo img{
+
+	.logo img {
 		width: 100px;
 	}
 }

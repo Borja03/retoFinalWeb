@@ -19,7 +19,7 @@
     
             <nav>
                 <div class="container">
-                    <a href="#" class="logo">
+                    <a href="../../index.php" class="logo">
                       <img src="../../images/logo.png"/>
                     </a>
                     
@@ -48,13 +48,17 @@
   
   <!-- Match the specific game -->
   <xsl:template match="juego">
+       <div class ="gameInfo">
+
     <h2><xsl:value-of select="titulo"/></h2>
     <p><strong>Description:</strong> <xsl:value-of select="descripcion"/></p>
     <p><strong>Release Year:</strong> <xsl:value-of select="fecha_salida"/></p>
     <p><strong>Genre:</strong> <xsl:value-of select="genero"/></p>
-    <p><img src="{imagen}" alt="Game Image"/></p>
-    
+    <p><img src="{concat('../../images/', imagen)}" alt="Game Image"/></p>
+
+    </div>
     <!-- Table for awards -->
+    <div class ="awards">
     <h3>Awards</h3>
     <table>
       <tr>
@@ -63,8 +67,9 @@
       </tr>
       <xsl:apply-templates select="premios/premio"/>
     </table>
-    
+    </div>
     <!-- Table for bosses -->
+     <div class ="bosses">
     <h3>Bosses</h3>
     <table>
       <tr>
@@ -75,6 +80,7 @@
       </tr>
       <xsl:apply-templates select="//boss[@juego=current()/@id]"/>
     </table>
+    </div>
   </xsl:template>
   
   <!-- Match each award -->

@@ -47,7 +47,7 @@ require_once("../ServerConexion/BDConexion.php");
 
 try {
 
-    $rutaXq = "../xquery/.xq";
+    $rutaXq = "../xquery/insert.xq";
     $fichero = fopen($rutaXq, "r"); // Abrimos el fichero $rutaXq en modo lectura "r"
     $xq = fread($fichero, filesize($rutaXq)); // Leemos el contenido del fichero y lo guardamos en la variable $xq
     fclose($fichero); // Cerramos el fichero
@@ -55,17 +55,20 @@ try {
     // create session
     $session = new Session();    
     // open database
-    $session->execute("open Unmatched"); // open y el nombre de la base de datos en el servidor BaseX
+    $session->execute("open saga"); // open y el nombre de la base de datos en el servidor BaseX
     // xquery
     $query = $session->query($xq);
-    $query->bind('$name', $_GET["name"]);
-    $query->bind('$characters', $_GET["characters"]);
-    $query->bind('$usd', $_GET["USD"]);
-    $query->bind('$eur', $_GET["EUR"]);
-    $query->bind('$gbp', $_GET["GBP"]);
-    $query->bind('$jpy', $_GET["JPY"]);
-    $query->bind('$language1', $_GET["language1"]);
-    $query->bind('$artistName', $_GET["artistName"]);
+	// Retrieve the submitted form data
+	//$query->bind('$id', $_GET['id']);
+	$query->bind('$juego', $_GET['juego']);
+	$query->bind('$nombre', $_GET['nombre']);
+	$query->bind('$genero', $_GET['genero']);
+	$query->bind('$lore', $_GET['lore']);
+	$query->bind('$arma1', $_GET['arma1']);
+	$query->bind('$arma2', $_GET['arma2']);
+	$query->bind('$imagen', $_GET['imagen']);
+	$query->bind('$localizacion', $_GET['localizacion']);
+	
     // execute result
     $result = $query->execute();
     // close query

@@ -19,7 +19,6 @@ $xsl->load('../../xslt/DarkSoul1.xsl');
 
 $proc = new XSLTProcessor;
 
-//$nameCard = $proc->getParameter('','nameCard');
 
 $proc->importStyleSheet($xsl); 
 

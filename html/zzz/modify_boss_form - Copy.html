@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Modify Set Form</title>
+	  <link rel="stylesheet" type="text/css" href="css/css_lore.css"/>
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One">
+	  <script src="../../script/scriptform2.js"></script>
+    </head>
+    <body>
+	 <div class="topnav">
+			<a class="active" href="../../index.html">Unmatched</a>
+			<div class="dropdown">
+				<a href="../../back/xpath/xslt/transform.php">Cards</a>
+				<!--<button class="dropbtn">Cards</button>
+				<div class="dropdown-content">
+					<a href="kingdom.html">Locations</a>
+					<a href="charaters.html">Characters</a>
+				</div>-->
+			</div>
+			<div class="dropdown">
+				<a href="../../back/xpath/xslt/transformBoards.php">Boards</a>
+			</div>
+			<div class="dropdown">
+			    <button class="dropbtn">Sets</button>
+				<div class="dropdown-content">
+					<a href="form_new_set.html">Add new set</a>
+					<a href="form_modify_set.html">Modify a set</a>
+					<a href="form_delete_set.html">Delete a set</a>
+					<a href="../../back/xpath/xslt/transformSets.php">See all sets</a>
+				</div>
+			</div>
+			<a href="../../back/xpath/xslt/transformHeroes.php">Heroes</a>
+			<a href="about.html">About</a>
+		</div>
+        <!-- Title -->
+        <h2>Modify Prices</h2>
+
+        <p>Select the Set you want to modify</p>
+
+        <!-- This is a drop-down list to choose the set you want to change the price -->
+  	  <form action="../../back/xquery/modifyset/BDAccess.php">
+        <select name="selectSet">
+            <option value="BL1" selected>Battle of Legends: Volume One</option>
+            <option value="RHB">Robin Hood vs. Bigfoot</option>
+            <option value="LEE">Bruce Lee</option>
+            <option value="IGR">Jurassic Park: InGen vs. Raptors</option>
+            <option value="CNF">Cobble &#38; Fog</option>
+            <option value="BVS">Buffy the Vampire Slayer</option>
+            <option value="LRB">Little Red Riding hood vs. Beowulf</option>
+            <option value="DPL">Deadpool</option>
+            <option value="BL2">Battle of Legends: Volume Two</option>
+            <option value="MRR">Marvel's Redemption Row</option>
+            <option value="MHK">Marvel's Hell Kitchen</option>
+            <option value="STR">Jurassic Park: Dr. Ellie Sattler vs. T-Rex</option>
+            <option value="HVG">Houdini vs. Genie</option>
+            <option value="MTS">Marvel's Teen Spirit</option>
+            <option value="MKC">Marvel's For King and Country</option>
+        </select>
+        <hr>
+
+        <!-- A number field to set the new price -->
+        
+        <input type="number" step="any" style="width: 60px" name="price" min="0" required>
+
+        <!-- This is another drop-down list to select the coint type to change the price -->
+        
+        <select name="selectCoin">
+            <option step="any">USD</option>
+            <option step="any">EUR</option>
+            <option step="any">GBP</option>
+            <option step="any">JPY</option>
+        </select>
+        
+        <input type="submit" onsubmit="validateForm()" value="Change Price">
+	</form>
+    </body>
+</html>

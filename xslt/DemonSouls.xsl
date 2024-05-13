@@ -18,7 +18,7 @@
     
             <nav>
                 <div class="container">
-                    <a href="#" class="logo">
+                    <a href="../../index.php" class="logo">
                         <img src="../../images/logo.png"/>
                     </a>
                     

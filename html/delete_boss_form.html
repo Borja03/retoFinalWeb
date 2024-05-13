@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Boss Form</title>
+</head>
+<body>
+
+<form id="deleteBossForm" action="delete_boss.php" method="get">
+    <label for="game">Select a game:</label>
+    <select id="game" name="game">
+        <option value="">Select a game</option>
+    </select>
+    <br>
+    <label for="boss">Select a boss:</label>
+    <select id="boss" name="boss">
+        <option value="">Select a boss</option>
+    </select>
+    <br>
+
+
+    
+    <input type="submit" value="Delete Boss">
+</form>
+
+<script>
+    // Fetch XML data and populate the dropdowns
+    fetch('../xml/saga.xml')
+        .then(response => response.text())
+        .then(xmlString => {
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(xmlString, 'text/xml');
+
+            // Populate game dropdown
+            const gameDropdown = document.getElementById('game');
+            const games = xmlDoc.querySelectorAll('juego');
+            games.forEach(game => {
+                const title = game.querySelector('titulo').textContent;
+                const id = game.getAttribute('id');
+                const option = document.createElement('option');
+                option.value = id;
+                option.textContent = title;
+                gameDropdown.appendChild(option);
+            });
+
+            // Event listener for game selection
+            gameDropdown.addEventListener('change', () => {
+                const selectedGameId = gameDropdown.value;
+                const bossDropdown = document.getElementById('boss');
+                bossDropdown.innerHTML = '<option value="">Select a boss</option>';
+
+                // Populate boss dropdown based on selected game
+                const bosses = xmlDoc.querySelectorAll(`boss[juego="${selectedGameId}"]`);
+                bosses.forEach(boss => {
+                    const name = boss.querySelector('nombre').textContent;
+                    const bossId = boss.getAttribute('id');
+                    const option = document.createElement('option');
+                    option.value = bossId;
+                    option.textContent = name;
+                    bossDropdown.appendChild(option);
+                });
+            });
+        })
+        .catch(error => console.error('Error fetching XML:', error));
+</script>
+
+</body>
+</html>
