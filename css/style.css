@@ -237,64 +237,92 @@ nav ul li a:hover {
     padding: 10px;
 }
 /* game card presentation */
-.game-info {
+
+.game-info-container {
+	display: flex;
+	flex-wrap: wrap;
+	max-height: fit-content;
+	justify-content: center;
+}
+
+.game-info-card {
     width: 95%;
-    margin: auto;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px 5px #401916;
-    display: flex;
-    padding: 20px;
-    background-color: yellowgreen;
-}
-
-.game-image {
-    margin-right: 20px;
-}
-
-.game-image img {
-    width: 60px;
-    height: 60px;
-}
-
-.game-title {
     text-align: center;
-    margin-bottom: 10px;
-    background-color: #a70202;
-}
-/* */
-.awards{
-    width: 95%;
-    margin: auto;
-	margin-top: 25px;
+    height:fit-content;
     border-radius: 20px;
+    margin: 20px;
     box-shadow: 5px 5px 5px 5px #401916;
     display: flex;
-    padding: 20px;
-    background-color: rgb(26, 33, 143);
+    flex-direction: column; /* Change to column layout */
+    background-color: #999;
+    margin-top: 20px;
 }
-
-.awards h2{
-	width: 100%;
-	display: inline-block;
-    background-color: #37c846;
+.game-info-title {
+    width: 100%; /* Title width matches card width */
+    height: 50px; /* Height of the title */
+    background-color: #333;
     color: #ff0000;
     font-size: 1.3em;
     font-weight: 900;
     text-align: center;
     padding: 10px;
     border-radius: 10px 10px 0px 0px;
-
 }
-.bosses {
-	width: 95%;
+
+.game-info-image {
+    height: 300px; /* Height of the image */
+    width: 300px; /* Image width occupies 45% of the card width */
+    align-self: flex-start; /* Align image to the top */
+    border-radius: 0px 10px 0px 0px; /* Adjust border-radius for the top left corner */
+}
+
+.game-desc{
+	background-color: #a70202;
+    font-size: 20px;
+    text-align: left;
+    flex: 1; /* Grow to fill remaining space */
+    padding: 10px;
+    width: 400px; /* Text width occupies 55% of the card width */
+}
+
+
+
+
+/* */
+
+
+  
+
+
+
+
+/* aword and bosses  acrds */
+.awards, .bosses {
+    width: 95%;
     margin: auto;
-	margin-top: 25px;
+    margin-top: 25px;
     border-radius: 20px;
     box-shadow: 5px 5px 5px 5px #401916;
     display: flex;
+    flex-direction: column; /* Added to stack children vertically */
     padding: 20px;
-    background-color: rgb(227, 198, 30);
+    background-color: rgb(26, 33, 143);
 }
+
+.awards h2, .bosses h2 {
+    width: 100%;
+    background-color: yellow; /* Changed background color to yellow */
+    color: #ff0000;
+    font-size: 1.3em;
+    font-weight: 900;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 20px; /* Added margin at bottom for spacing */
+}
+
+
+
 
 
 /* transformation tables css */
