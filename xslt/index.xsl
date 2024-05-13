@@ -37,8 +37,6 @@
                   </div>
                 </div>
                 <li><a href="./html/contact.html">Contact Us</a></li>
-
-
               </ul>
             </div>
           </nav>

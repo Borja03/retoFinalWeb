@@ -11,31 +11,36 @@
         
       </head>
       <body>
+        
         <header>
-            <div class="top">
-                <div class="container"/>
-                                
-            </div>
-    
-            <nav>
-                <div class="container">
-                    <a href="../../index.php" class="logo">
-                      <img src="../../images/logo.png"/>
-                    </a>
-                    
-                    <input type="checkbox" id="menu"/>
-                    <label for="menu"><i class="fas fa-bars"></i></label>
-                    <ul class="menuList">
-                        <li><a href="../Transformations/demons souls.php">Demon's Souls</a></li>
-                        <li><a href="../Transformations/dark souls1.php">Dark Souls I</a></li>
-                        <li><a href="../Transformations/dark souls2.php">Dark Souls II</a></li>
-                        <li><a href="../Transformations/dark souls3.php">Dark Souls III</a></li>
-                        <li><a href="../Transformations/bloodborne.php">Bloodborne</a></li>
-                        <li><a href="../Transformations/eldenring.php">Elden Ring</a></li>
-                    </ul>
+          <div class="top"></div>
+          <nav>
+            <div class="container">
+              <a href="../../index.php" class="logo">
+                <img src="../../images/logo.png"/>
+              </a>
+              <input type="checkbox" id="menu"/>
+              <label for="menu"><i class="fas fa-bars"></i></label>
+              <ul class="menuList">
+                <li><a href="../Transformations/demons souls.php">Demon's Souls</a></li>
+                <li><a href="../Transformations/bloodborne.php">Bloodborne</a></li>
+                <li><a href="../Transformations/eldenring.php">Elden Ring</a></li>
+                <li><a href="../Transformations/sekiro.php">Sekiro Shadows</a></li>
+                
+                <div class="dropdown">
+                  <a>Dark Souls</a>
+                  <div class="dropdown-content">
+                    <li><a href="../Transformations/dark souls1.php">Dark Souls I</a></li>
+                    <li><a href="../Transformations/dark souls2.php">Dark Souls II</a></li>
+                    <li><a href="../Transformations/dark souls3.php">Dark Souls III</a></li>
+                  </div>
                 </div>
-            </nav>
+                <li><a href="../../html/contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
         </header>
+
         <div class="empty"></div>
           
         <div class="main">
