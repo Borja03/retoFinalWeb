@@ -236,73 +236,71 @@ nav ul li a:hover {
     justify-content: flex-end; /* Align text at the bottom */
     padding: 10px;
 }
-
-/* to be used in next pages 
-.boss-card {
-    width: 90%;
+/* game card presentation */
+.game-info {
+    width: 95%;
     margin: auto;
     border-radius: 20px;
     box-shadow: 5px 5px 5px 5px #401916;
     display: flex;
     padding: 20px;
     background-color: yellowgreen;
-    margin-top: 20px;
 }
 
-.boss-image {
+.game-image {
     margin-right: 20px;
 }
 
-.boss-image img {
+.game-image img {
     width: 60px;
     height: 60px;
 }
 
-.boss-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.boss-title {
+.game-title {
     text-align: center;
     margin-bottom: 10px;
     background-color: #a70202;
 }
-
-.boss-details {
+/* */
+.awards{
+    width: 95%;
+    margin: auto;
+	margin-top: 25px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px #401916;
     display: flex;
-    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(26, 33, 143);
 }
 
-.boss-game {
-    background-color: #a74f02;
+.awards h2{
+	width: 100%;
+	display: inline-block;
+    background-color: #37c846;
+    color: #ff0000;
+    font-size: 1.3em;
+    font-weight: 900;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+.bosses {
+	width: 95%;
+    margin: auto;
+	margin-top: 25px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px #401916;
+    display: flex;
+    padding: 20px;
+    background-color: rgb(227, 198, 30);
 }
 
-.boss-desc {
-    background-color: #523636;
-}
 
-.boss-location {
-    background-color: #15a702;
-}
-
-.boss-gender {
-    background-color: #705a5a;
-}
-
-.boss-weapon {
-    background-color: #5e2491;
-}
-
-.boss-card img {
-    background-color: #02a762;
-}
-*/
 /* transformation tables css */
-
 table {
 	border-collapse: collapse;
+	
 	width: 90%;
 	margin: auto;
 }
