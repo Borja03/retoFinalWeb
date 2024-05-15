@@ -5,49 +5,191 @@
     <title>Add new boss</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="stylesheet" href="../../css/styled.css">
     <script src="../script/script.js"></script>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            background-color: #1d2634;
+            color: #9e9ea4;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        aside {
+            width: 200px;
+            background-color: #263043;
+            padding-top: 30px;
+            position: fixed;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .main {
+            margin-left: 200px;
+            padding: 20px;
+            width: calc(100% - 200px);
+        }
+
+        .main-title {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            width: 30%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .card:first-child {
+            background-color: #2962ff;
+        }
+
+        .card:nth-child(2) {
+            background-color: #ff6d00;
+        }
+
+        .card:nth-child(3) {
+            background-color: #2e7d32;
+        }
+
+        ul.sidebar-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul.sidebar-list li {
+            padding: 0;
+            font-size: 18px;
+            color: #9e9ea4;
+        }
+
+        ul.sidebar-list li a {
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+            color: #9e9ea4;
+        }
+
+        ul.sidebar-list li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .main-contact {
+            display: flex;
+            margin: auto;
+            gap: 10px;
+            height: fit-content;
+            background-color: #2f3c51;
+            width: 90%;
+            border-radius: 20px;
+            box-shadow: 3px 3px 3px rgb(79, 76, 76);
+            display: flex;
+            padding: 20px;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=date],
+        select,
+        radio {
+            margin-top: 20px;
+            width: 70%;
+            height: 40px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        label {
+            display: inline-block;
+            width: 25%;
+        }
+
+        input[type=submit],
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: fit-content;
+            align-self: center;
+        }
+
+        textarea {
+            resize: none;
+            width: 100%;
+            height: 180px;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type=submit]:hover,
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Header and menu here-->
-    <div class="container">
+    <!-- Sidebar -->
+    <aside>
+        <div class="sidebar-title">
+            <h2 class="sidebar-brand">Menu</h2>
+        </div>
+        <ul class="sidebar-list">
+            <li>
+                <a href="./add_new_boss_form.html">
+                    <span>Add Boss</span>
+                </a>
+            </li>
+            <li>
+                <a href="./modify_boss_form.html">
+                    <span>Modify Boss</span>
+                </a>
+            </li>
+            <li>
+                <a href="./delete_boss_form.html">
+                    <span>Delete Boss</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <!-- End Sidebar -->
 
-        <!-- Header -->
-        <header class="header">
-
-        </header>
-        <!-- End Header -->
-
-        <!-- Sidebar -->
-        <aside id="sidebar">
-
-
-            <ul class="sidebar-list">
-                <li>
-                    <a href="./add_new_boss_form.html">
-                        <span>Add Boss</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="./modifiy_boss_form.html">
-                        <span>Modify Boss</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./delete_boss_form.html">
-                        <span>Delete Boss</span>
-                    </a>
-                </li>
-
-
-        </aside>
-        <!-- End Sidebar -->
-
-
+    <!-- Main -->
+    <div class="main">
+        <div class="main-title">
+            <h2>Add New Boss</h2>
+        </div>
         <div class="main-contact">
-
             <form action="../php/BDAccessInsert.php" method="get">
                 <!-- Title -->
                 <h2>Insert new boss</h2>
@@ -78,63 +220,57 @@
                 <label for="localizacion">Localización:</label>
                 <input type="text" id="localizacion" name="localizacion" required><br><br>
 
-
                 <label for="imagen">Imagen:</label>
                 <input type="file" id="imagen" name="imagen" accept="image/*" required><br><br>
 
-
-
-                <!-- Hidden input field to include the ID -->
-                <!-- <input type="hidden" id="id" name="id"> -->
-
                 <button type="submit">Submit</button>
             </form>
-
         </div>
-        <script>
-            // Fetch saga.xml file and populate form
-            fetch('../xml/saga.xml')
-                .then(response => response.text())
-                .then(data => {
-                    const parser = new DOMParser();
-                    const xmlDoc = parser.parseFromString(data, 'text/xml');
-                    const bosses = xmlDoc.getElementsByTagName('boss');
-                    let largestID = 0;
-                    for (let i = 0; i < bosses.length; i++) {
-                        const bossID = parseInt(bosses[i].getAttribute('id'));
-                        if (bossID > largestID) {
-                            largestID = bossID;
-                        }
+    </div>
+    <!-- End Main -->
+
+    <script>
+        // Fetch saga.xml file and populate form
+        fetch('../xml/saga.xml')
+            .then(response => response.text())
+            .then(data => {
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(data, 'text/xml');
+                const bosses = xmlDoc.getElementsByTagName('boss');
+                let largestID = 0;
+                for (let i = 0; i < bosses.length; i++) {
+                    const bossID = parseInt(bosses[i].getAttribute('id'));
+                    if (bossID > largestID) {
+                        largestID = bossID;
                     }
-                    document.getElementById('id').value = largestID + 1; // Set the value of the hidden input field
-                })
-                .catch(error => console.error('Error fetching XML:', error));
-            // Populate the dropdown menu for the "juego" attribute
-            var juegosId = ["DM", "DS1", "DS2", "DS3", "BB", "ER"];
-            var juegos = ["Demon's Souls Remake", "Dark Souls", "Dark Souls II", "Dark Souls III", "Bloodborne", "Elden Ring"];
-
-            var juegoDropdown = document.getElementById("juego");
-            juegos.forEach(function (juego, index) {
-                var option = document.createElement("option");
-                option.text = juego;
-                option.value = juegosId[index]; // Set the value to the corresponding ID
-                juegoDropdown.add(option);
-            });
-
-            // Function to get the ID of the selected juego
-            function getJuegoId(juegoName) {
-                var index = juegos.indexOf(juegoName);
-                if (index !== -1) {
-                    return juegosId[index];
-                } else {
-                    console.error("Juego not found:", juegoName);
-                    return null;
                 }
+                document.getElementById('id').value = largestID + 1; // Set the value of the hidden input field
+            })
+            .catch(error => console.error('Error fetching XML:', error));
+
+        // Populate the dropdown menu for the "juego" attribute
+        var juegosId = ["DM", "DS1", "DS2", "DS3", "BB", "ER"];
+        var juegos = ["Demon's Souls Remake", "Dark Souls", "Dark Souls II", "Dark Souls III", "Bloodborne", "Elden Ring"];
+
+        var juegoDropdown = document.getElementById("juego");
+        juegos.forEach(function (juego, index) {
+            var option = document.createElement("option");
+            option.text = juego;
+            option.value = juegosId[index]; // Set the value to the corresponding ID
+            juegoDropdown.add(option);
+        });
+
+        // Function to get the ID of the selected juego
+        function getJuegoId(juegoName) {
+            var index = juegos.indexOf(juegoName);
+            if (index !== -1) {
+                return juegosId[index];
+            } else {
+                console.error("Juego not found:", juegoName);
+                return null;
             }
-
-        </script>
-
-
+        }
+    </script>
 </body>
 
 </html>

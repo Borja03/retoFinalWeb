@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styled.css">
+    <script src="../script/script.js" defer></script>
+    <title>Modify Boss Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .main-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            max-width: 90%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        textarea,
+        select {
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <!-- Add header content here if needed -->
+        </header>
+        <!-- End Header -->
+
+        <!-- Sidebar -->
+        <aside id="sidebar">
+            <ul class="sidebar-list">
+                <li>
+                    <a href="./add_new_boss_form.html">
+                        <span>Add Boss</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./modify_boss_form.html">
+                        <span>Modify Boss</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./delete_boss_form.html">
+                        <span>Delete Boss</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- End Sidebar -->
+
+        <div class="main-content">
+            <form id="modifyBossForm" action="../php/BDAccessModify.php" method="get">
+                <label for="game">Select a game:</label>
+                <select id="game" name="game">
+                    <option value="">Select a game</option>
+                </select>
+                <br><br>
+                <label for="boss">Select a boss:</label>
+                <select id="boss" name="boss">
+                    <option value="">Select a boss</option>
+                </select>
+                <br><br>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre"><br><br>
+
+                <label for="genero">Género: </label>
+                <input type="text" id="genero" name="genero"><br><br>
+
+                <label for="lore">Lore: </label>
+                <textarea id="lore" name="lore"></textarea><br><br>
+
+                <label for="arma1">Arma 1: </label>
+                <input type="text" id="arma1" name="arma1"><br><br>
+
+                <label for="arma2">Arma 2: </label>
+                <input type="text" id="arma2" name="arma2"><br><br>
+
+                <label for="localizacion">Localización: </label>
+                <input type="text" id="localizacion" name="localizacion"><br><br>
+
+                <input type="submit" value="Modify Boss">
+            </form>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                fetch('../xml/saga.xml')
+                    .then(response => response.text())
+                    .then(xmlString => {
+                        const parser = new DOMParser();
+                        const xmlDoc = parser.parseFromString(xmlString, 'text/xml');
+
+                        // Populate game dropdown
+                        const gameDropdown = document.getElementById('game');
+                        const games = xmlDoc.querySelectorAll('juego');
+                        games.forEach(game => {
+                            const title = game.querySelector('titulo').textContent;
+                            const id = game.getAttribute('id');
+                            const option = document.createElement('option');
+                            option.value = id;
+                            option.textContent = title;
+                            gameDropdown.appendChild(option);
+                        });
+
+                        // Event listener for game selection
+                        gameDropdown.addEventListener('change', () => {
+                            const selectedGameId = gameDropdown.value;
+                            const bossDropdown = document.getElementById('boss');
+                            bossDropdown.innerHTML = '<option value="">Select a boss</option>';
+
+                            // Populate boss dropdown based on selected game
+                            const bosses = xmlDoc.querySelectorAll(`boss[juego="${selectedGameId}"]`);
+                            bosses.forEach(boss => {
+                                const name = boss.querySelector('nombre').textContent;
+                                const bossId = boss.getAttribute('id');
+                                const option = document.createElement('option');
+                                option.value = bossId;
+                                option.textContent = name;
+                                bossDropdown.appendChild(option);
+                            });
+
+                            // Clear input fields when selecting a new game
+                            clearInputFields();
+                        });
+
+                        // Event listener for boss selection
+                        const bossDropdown = document.getElementById('boss');
+                        bossDropdown.addEventListener('change', () => {
+                            const selectedBossId = bossDropdown.value;
+                            if (!selectedBossId) {
+                                // Clear input fields if no boss is selected
+                                clearInputFields();
+                                return;
+                            }
+                            const selectedBoss = xmlDoc.querySelector(`boss[id="${selectedBossId}"]`);
+                            if (selectedBoss) {
+                                // Fill input fields with boss data
+                                document.getElementById('nombre').value = selectedBoss.querySelector('nombre').textContent;
+                                document.getElementById('genero').value = selectedBoss.querySelector('genero').textContent;
+                                document.getElementById('lore').value = selectedBoss.querySelector('lore').textContent;
+                                document.getElementById('arma1').value = selectedBoss.querySelectorAll('arma')[0]?.textContent || '';
+                                document.getElementById('arma2').value = selectedBoss.querySelectorAll('arma')[1]?.textContent || '';
+                                document.getElementById('localizacion').value = selectedBoss.querySelector('localizacion').textContent;
+                            }
+                        });
+                    })
+                    .catch(error => console.error('Error fetching XML:', error));
+
+                // Function to clear input fields
+                function clearInputFields() {
+                    document.getElementById('nombre').value = '';
+                    document.getElementById('genero').value = '';
+                    document.getElementById('lore').value = '';
+                    document.getElementById('arma1').value = '';
+                    document.getElementById('arma2').value = '';
+                    document.getElementById('localizacion').value = '';
+                }
+            });
+        </script>
+    </div>
