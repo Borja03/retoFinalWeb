@@ -65,11 +65,11 @@
           
           <div class="middleFooter">
             <div class="rectangleLeft">
-              <img src="./images/logo_gv.png" alt="Placeholder 2"/>
+              <!--<img src=".png" alt="Placeholder 2"/> the idea was to add somthing here-->
             </div>
             
             <div class="rectangleRight">
-              <img src="./images/logo_fp_euskadi.png" alt="Placeholder 3"/>
+              <!--<img src=".png" alt="Placeholder 2"/> the idea was to add somthing here-->
             </div>
           </div>
           

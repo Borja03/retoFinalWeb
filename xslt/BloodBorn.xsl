@@ -68,54 +68,51 @@
         
         <footer>
           <div class="topFooter">
-          </div>
+          </div>    
           <div class="middleFooter">
             <div class="rectangleLeft">
-              <img src="./images/logo_gv.png" alt="Placeholder 2" />
-            </div>
-            
+              <!--<img src=".png" alt="Placeholder 2"/> the idea was to add somthing here-->
+            </div> 
             <div class="rectangleRight">
-              <img src="./images/logo_fp_euskadi.png" alt="Placeholder 3" />
+              <!--<img src=".png" alt="Placeholder 2"/> the idea was to add somthing here-->
             </div>
           </div>
-          
           <div class="bottomFooter">
             <p>Made with <span>&#10084;</span> in Tartanga 2023-2024</p>
           </div>
-        </footer>
-        
+        </footer>        
       </body>
     </html>
   </xsl:template>
   
   <!-- Match the specific game -->
   <xsl:template match="juego">
-<div class="game-info-container">
-    <div class="game-info-card">
+    <div class="game-info-container">
+      <div class="game-info-card">
         <div class="game-info-title">
-            <h2><xsl:value-of select="titulo" /></h2>
+          <h2><xsl:value-of select="titulo" /></h2>
         </div>
         <div class="game-info-content">
-            <div class="game-info-image">
+          <div class="game-info-image">
             <img src="{concat('../../images/', imagen)}" alt="Game Image" />
+          </div>
+          <div class="game-info-text">
+            <div class="game-desc">
+              <p><strong>Description:</strong><xsl:value-of select="descripcion" /></p>
             </div>
-            <div class="game-info-text">
-                <div class="game-desc">
-                    <p><strong>Description:</strong><xsl:value-of select="descripcion" /></p>
-                </div>
-                <div class="game-date">
-                    <p><strong>Release Year:</strong><xsl:value-of select="fecha_salida" /></p>
-                </div>
-                <div class="game-gender">
-                    <p><strong>Genre:</strong><xsl:value-of select="genero" /></p>
-                </div>
+            <div class="game-date">
+              <p><strong>Release Year:</strong><xsl:value-of select="fecha_salida" /></p>
             </div>
+            <div class="game-gender">
+              <p><strong>Genre:</strong><xsl:value-of select="genero" /></p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
-
-
+    
+    
+    
     <!-- Table for awards -->
     <div
       class="awards">
