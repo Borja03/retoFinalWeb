@@ -135,8 +135,8 @@
         <!-- Game 7: Elden Ring -->
         <juego id="ER">
             <titulo>Elden Ring</titulo>
-            <descripcion>Elden Ring es un próximo juego de rol de acción desarrollado por FromSoftware en colaboración con George R. R. Martin, conocido por su trabajo en A Song of Ice and Fire. Ambientado en un mundo vasto e interconectado, Elden Ring promete llevar los límites del género de juegos de rol de acción con su rica historia, jugabilidad desafiante y exploración dinámica de mundo abierto. Los jugadores emprenderán un viaje para descubrir la verdad detrás del Anillo de Elden y dar forma al destino de las Tierras Intermedias.</descripcion>            
-            <fecha_salida>TBD</fecha_salida>
+            <descripcion>Elden Ring es un juego de rol de acción desarrollado por FromSoftware en colaboración con George R. R. Martin, conocido por su trabajo Juego de Tronos. Ambientado en un mundo vasto e interconectado, Elden Ring promete llevar los límites del género de juegos de rol de acción con su rica historia, jugabilidad desafiante y exploración dinámica de mundo abierto. Los jugadores emprenderán un viaje para descubrir la verdad detrás del Anillo de Elden y dar forma al destino de las Tierras Intermedias.</descripcion>            
+            <fecha_salida>2022</fecha_salida>
             <genero>Action RPG</genero>
             <imagen>ed.jpeg</imagen>
             <premios>
@@ -214,30 +214,30 @@
                 <arma>lanzas</arma>
                 <arma>escudos</arma>
             </armas>
-            <imagen>phalanx_image.jpg</imagen>
+            <imagen>images/falange.jpeg</imagen>
             <localizacion>Palacio de Boletaria</localizacion>
         </boss>
 
         <boss id="02" juego="DM">
-            <nombre>Torre del Caballero</nombre>
+            <nombre>Caballero de la Torre</nombre>
             <genero>masculino</genero>
-            <descripcion>La Torre del Caballero es un colosal caballero vestido con armadura pesada, que guarda las puertas del Palacio de Boletaria. Protegido por un escudo masivo y empuñando una lanza gigante, representa un desafío formidable para cualquiera que se atreva a enfrentarlo. Los jugadores deben encontrar formas de pasar por sus defensas y golpear sus puntos débiles para derrotarlo.</descripcion>
+            <descripcion>Caballero de la Torre es un colosal caballero vestido con armadura pesada, que guarda las puertas del Palacio de Boletaria. Protegido por un escudo masivo y empuñando una lanza gigante, representa un desafío formidable para cualquiera que se atreva a enfrentarlo. Los jugadores deben encontrar formas de pasar por sus defensas y golpear sus puntos débiles para derrotarlo.</descripcion>
             <armas>
                 <arma>Gran Escudo</arma>
                 <arma>Gran Lanza</arma>
             </armas>
-            <imagen>torre_del_caballero_image.jpg</imagen>
+            <imagen>images/ctorre.jpeg</imagen>
             <localizacion>Palacio de Boletaria</localizacion>
         </boss>
 
         <boss id="03" juego="DM">
-            <nombre>Juez</nombre>
+            <nombre>Adjudicador</nombre>
             <genero>otros</genero>
-            <descripcion>El Juez es una criatura grotesca adorada como una deidad por los habitantes depravados del Santuario de Tormentas. Con su enorme tamaño y un hacha gigante incrustada en su estómago, infunde temor en los corazones de aquellos que lo enfrentan. Los jugadores deben explotar sus debilidades y golpear sus puntos vulnerables para derrotarlo.</descripcion>
+            <descripcion>El Adjudicador es una criatura grotesca adorada como una deidad por los habitantes depravados del Santuario de Tormentas. Con su enorme tamaño y un hacha gigante incrustada en su estómago, infunde temor en los corazones de aquellos que lo enfrentan. Los jugadores deben explotar sus debilidades y golpear sus puntos vulnerables para derrotarlo.</descripcion>
             <armas>
                 <arma>Hacha Gigante</arma>
             </armas>
-            <imagen>juez_image.jpg</imagen>
+            <imagen>images/juez.jpeg</imagen>
             <localizacion>Santuario de Tormentas</localizacion>
         </boss>
 
@@ -249,7 +249,7 @@
             <armas>
                 <arma>Gran Mazo</arma>
             </armas>
-            <imagen>asylum_demon_image.jpg</imagen>
+            <imagen>images/asylum.jpeg</imagen>
             <localizacion>Asylum del Norte</localizacion>
         </boss>
 
@@ -261,7 +261,7 @@
                 <arma>Alabarda de Ornstein</arma>
                 <arma>Martillo de Smough</arma>
             </armas>
-            <imagen>ornstein_y_smough_image.jpg</imagen>
+            <imagen>images/orn.jpeg</imagen>
             <localizacion>Anor Londo</localizacion>
         </boss>
 
@@ -272,7 +272,7 @@
             <armas>
                 <arma>Gran Espada</arma>
             </armas>
-            <imagen>../../images/ds1.jpg</imagen>
+            <imagen>images/gwyn.jpeg</imagen>
             <localizacion>Kiln del Primer Fuego</localizacion>
         </boss>
 
@@ -284,7 +284,7 @@
             <armas>
                 <arma>Garras Gigantes</arma>
             </armas>
-            <imagen>../../images/ultimo_gigante_image.jpg</imagen>
+            <imagen>images/ultimo.jpeg</imagen>
             <localizacion>Bosque de los Gigantes Caídos</localizacion>
         </boss>
 
@@ -295,7 +295,7 @@
             <armas>
                 <arma>Martillo Real</arma>
             </armas>
-            <imagen>velstadt_el_guardian_real_image.jpg</imagen>
+            <imagen>images/velstadt.jpeg</imagen>
             <localizacion>Aliento del Dragón</localizacion>
         </boss>
 
@@ -307,7 +307,7 @@
             <armas>
                 <arma>Maza Clérigo</arma>
             </armas>
-            <imagen>bestia_clerigo_image.jpg</imagen>
+            <imagen>images/clerigo.jpeg</imagen>
             <localizacion>Central Yharnam</localizacion>
         </boss>
 
@@ -319,19 +319,19 @@
                 <arma>Hacha de Caza</arma>
                 <arma>Pistola de Sangre</arma>
             </armas>
-            <imagen>padre_gascoigne_image.jpg</imagen>
+            <imagen>images/padre.jpeg</imagen>
             <localizacion>Distrito de las Tumbas</localizacion>
         </boss>
 
         <boss id="11" juego="Bloodborne">
-            <nombre>El Huérfano Cosmico</nombre>
+            <nombre>El Huérfano de Kos</nombre>
             <genero>otros</genero>
-            <lore>El Huérfano Cosmico es uno de los jefes más desafiantes y aterradores que los cazadores encuentran en Bloodborne. Como un ser nacido de la Gran Necesidad y abandonado en el Sueño del Cazador, su llanto resonante y su violencia desenfrenada representan una amenaza para todo Yharnam. Los cazadores valientes deben enfrentarse a esta criatura cósmica y poner fin a su sufrimiento.</lore>
+            <lore>El Huérfano de Kos es uno de los jefes más desafiantes y aterradores que los cazadores encuentran en Bloodborne. Como un ser nacido de la Gran Necesidad y abandonado en el Sueño del Cazador, su llanto resonante y su violencia desenfrenada representan una amenaza para todo Yharnam. Los cazadores valientes deben enfrentarse a esta criatura cósmica y poner fin a su sufrimiento.</lore>
             <armas>
                 <arma>Orbe Cósmico</arma>
                 <arma>Placenta Inhumana</arma>
             </armas>
-            <imagen>huerfano_cosmico_image.jpg</imagen>
+            <imagen>images/kos.jpeg</imagen>
             <localizacion>Costa de la Pesadilla de la Caza</localizacion>
         </boss>
         
@@ -344,32 +344,32 @@
                 <arma>Espada de Fuego</arma>
                 <arma>Guadaña de las Sombras</arma>
             </armas>
-            <imagen>abyss_watchers_image.jpg</imagen>
+            <imagen>images/abyss.jpeg</imagen>
             <localizacion>Catacumbas de Carthus</localizacion>
         </boss>
 
         <boss id="13" juego="DS3">
-            <nombre>Dragón Aliento de Fuego</nombre>
+            <nombre>Midir, el devorador de la oscuridad</nombre>
             <genero>otros</genero>
-            <lore>El Dragón Aliento de Fuego es un antiguo dragón que acecha en lo más profundo de la Fortaleza de Lothric. Con su aliento abrasador y su inmenso poder, representa una amenaza para los intrusos que se aventuran en su guarida. Los valientes guerreros deben enfrentarse a esta bestia antigua y poner fin a su reinado de fuego.</lore>
+            <lore>Midir, el devorador de la oscuridad es un antiguo dragón que acecha en lo más profundo de la Fortaleza de Lothric. Con su aliento abrasador y su inmenso poder, representa una amenaza para los intrusos que se aventuran en su guarida. Los valientes guerreros deben enfrentarse a esta bestia antigua y poner fin a su reinado de fuego.</lore>
             <armas>
                 <arma>Alas de Fuego</arma>
                 <arma>Garras Ardientes</arma>
             </armas>
-            <imagen>dragon_aliento_de_fuego_image.jpg</imagen>
+            <imagen>images/midir.jpeg</imagen>
             <localizacion>Fortaleza de Lothric</localizacion>
         </boss>
 
         <boss id="14" juego="DS3">
-            <nombre>Príncipe Lorian y Lothric, Hermanos Gemelos</nombre>
+            <nombre>Lorian, Príncipe Anciano y Lothric, joven príncipe</nombre>
             <genero>otros</genero>
-            <lore>Lorian, el Príncipe Maldito, y su hermano Lothric, el Príncipe Hechicero, son dos jefes gemelos que defienden el Castillo de Lothric. Unidos en un vínculo maldito, estos hermanos se enfrentan a los intrusos con su formidable poder y habilidades mágicas. Para derrotarlos, los guerreros deben superar su conexión y vencer a ambos en combate.</lore>
+            <lore>Lorian, Príncipe Anciano y Lothric, joven príncipe son dos jefes gemelos que defienden el Castillo de Lothric. Unidos en un vínculo maldito, estos hermanos se enfrentan a los intrusos con su formidable poder y habilidades mágicas. Para derrotarlos, los guerreros deben superar su conexión y vencer a ambos en combate.</lore>
             <armas>
                 <arma>Espada de Lorian</arma>
                 <arma>Escudo de Lothric</arma>
                 <arma>Magia de Lothric</arma>
             </armas>
-            <imagen>principe_lorian_y_lothric_image.jpg</imagen>
+            <imagen>images/lorian.jpeg</imagen>
             <localizacion>Gran Salón de la Torre</localizacion>
         </boss>
 
