@@ -9,83 +9,13 @@
         <script src="../../script/script.js"></script>
         <link rel="stylesheet" href="../../css/styled.css"></link>
         <style>
-          body {
-            display: flex;
-            margin: 0;
-            padding: 0;
-            background-color: #1d2634;
-            color: #9e9ea4;
-            font-family: 'Montserrat', sans-serif;
-          }
-          aside {
-            width: 200px;
-            background-color: #263043;
-            padding-top: 30px;
-            position: fixed;
-            height: 100%;
-            overflow-y: auto;
-          }
-          .main {
-            margin-left: 200px; /* Same as the width of the sidebar */
-            padding: 20px;
-            width: calc(100% - 200px);
-          }
-          .main-title {
-            display: flex;
-            justify-content: space-between;
-            color: white;
-          }
-          .container {
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
-          }
-          .card {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 20px;
-            text-align: center;
-            width: 25%;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            color: white;
-          }
-          .card h2 {
-            margin-top: 0;
-          }
-          .card:first-child  {
-            background-color: #98a;
-          }
-          .card:nth-child(2) {
-            background-color: #d07f44;
-          }
-          .card:nth-child(3) {
-            background-color: #3e7f41;
-          }
-          ul.sidebar-list {
-            list-style-type: none;
-            padding: 0;
-          }
-          ul.sidebar-list li {
-            padding: 0;
-            font-size: 18px;
-            color: #9e9ea4;
-          }
-          ul.sidebar-list li a {
-            display: block;
-            padding: 20px;
-            text-decoration: none;
-            color: #9e9ea4;
-          }
-          ul.sidebar-list li a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-          }
         </style>
       </head>
       <body>
         <!-- Sidebar -->
         <aside>
           <div class="sidebar-title">
-            <h2 class="sidebar-brand">Menu</h2>
+            <h2 class="sidebar-brand">Dash-Menu</h2>
           </div>
           <ul class="sidebar-list">
             <li>
