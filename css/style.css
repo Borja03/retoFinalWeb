@@ -1,0 +1,693 @@
+@font-face {
+	font-family: 'bloodBorn';
+	src: url(../font/Fleshandblood-MVA5x.ttf);
+
+
+	/* Add additional font formats if necessary */
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*font-family: sans-serif;*/
+	font-family: bloodBorn;
+}
+
+ul {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	/*font-size: 1.2em;*/
+	font-size: 1em;
+	font-weight: bolder;
+	transition: .3s;
+}
+h1 {
+	text-align: center;
+	padding: 7px;
+}
+
+header {
+	top: 0;
+	left: 0;
+	padding-bottom: 200px;
+	position: fixed;
+	width: 100%;
+
+
+}
+
+.top {
+	background-color: #000000;
+	padding: 20px 0;
+}
+
+.container {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.top ul li {
+	margin-right: 15px;
+}
+
+.top ul li a {
+	color: #fff;
+}
+
+.top ul li a:hover {
+	color: #fbfbfb;
+}
+
+nav {
+	background-color: #000000;
+	padding-top: 100px;
+	position: relative;
+	padding: 27px 0;
+	z-index: 9999;
+}
+
+.logo {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	/*top: -60px;
+	left: 40.5%;*/
+	top: -65px;
+	left: 40%;
+}
+
+nav ul {
+	width: 100%;
+	transition: .3s;
+}
+
+nav ul li:nth-child(4) {
+	margin-left: 250px;
+}
+
+
+nav ul li a {
+	color: rgb(255, 0, 0);
+	font-weight: bold;
+}
+
+nav ul li a:hover {
+	color: #fefefe;
+}
+
+#menu {
+	display: none;
+}
+
+.section {
+	color: width;
+}
+
+.dropdown {
+	display: inline-block;
+}
+
+.dropdown a {
+	color: #ff0000;
+
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #000000;
+	min-width: 100px;
+	width: 200px;
+	margin-left: -35px;
+}
+
+.dropdown-content a {
+	color: #ff0000;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+
+}
+
+.dropdown-content a:hover {
+	background-color: #333;
+	color: #fefefe;
+
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+
+.empty {
+	padding-top: 95px;
+	/* Add space equal to the height of the fixed header */
+	margin: auto;
+	width: 80%;
+	height: 125px;
+	margin: auto;
+}
+
+.main {
+	background-color: #EEEEEE;
+	height: fit-content;
+	width: 80%;
+	margin: auto;
+	padding-bottom: 30px;
+	margin-bottom: -50px;
+}
+
+
+
+/* other test */
+
+.boss-card-container {
+	display: flex;
+	flex-wrap: wrap;
+	max-height: fit-content;
+	justify-content: center;
+}
+
+.boss-card {
+    width: 350px;
+    text-align: center;
+    height:550px;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px 5px #401916;
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    background-color: #999;
+    margin-top: 20px;
+}
+
+.boss-title {
+    width: 100%; /* Title width matches card width */
+    background-color: #333;
+    color: #ff0000;
+    font-size: 1.3em;
+    font-weight: 900;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.boss-image {
+    height: 300px; /* Height of the image */
+    width: 100%; /* Image width matches card width */
+}
+
+.boss-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.boss-details {
+	font-size: 20px;
+	text-align: left;
+    flex: 1; /* Grow to fill remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align text at the bottom */
+    padding: 10px;
+}
+/* game card presentation */
+
+
+
+/* */
+
+
+  
+
+
+
+
+/* aword and bosses  acrds */
+.awards, .bosses {
+    width: 95%;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px #401916;
+    display: flex;
+    flex-direction: column; /* Added to stack children vertically */
+}
+
+.awards h2, .bosses h2 {
+
+	width: 100%;
+    background-color: #333;
+    color: #ff0000;
+    font-size: 1.3em;
+    font-weight: 900;
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+	margin-bottom:  20px;
+
+}
+
+
+
+
+
+/* transformation tables css */
+table {
+	border-collapse: collapse;
+	
+	width: 95%;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+th,
+td {
+	border: 1px solid #050000;
+	text-align: left;
+	padding: 8px;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+/* css footer */
+
+footer {
+	background-color: rgb(0, 0, 0);
+	text-align: center;
+	font-size: 14px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.topFooter {
+	flex-basis: 100%;
+	height: fit-content;
+	background-color: rgb(0, 0, 0);
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+
+.middleFooter {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.rectangleLeft,
+.rectangleRight {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rectangleLeft img,
+.rectangleRight img {
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+	/* This centers the image within its container */
+}
+
+
+
+.bottomFooter {
+    padding-top: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+    text-align: center;
+    font-size: 14px;
+    bottom: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+	padding-bottom: 30px;
+}
+
+.bottomFooter p {
+    color: #E9E5D6;
+    padding: 20px;
+}
+
+.bottomFooter span {
+    color: red;
+}
+/* cards in footer */ 
+
+
+
+/* ends of card  in footer */
+/*contact page style*/
+.contact {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-contact {
+    display: flex;
+    margin: auto;
+    gap: 10px;
+    height: fit-content;
+	background-color: #EDEDED;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 3px  #401916; ;
+    display: flex;
+    padding: 20px;
+
+
+}
+
+.left {
+    background-color: whitesmoke;
+    width: 40%;
+    height: fit-content;
+    border-radius: 20px;
+
+    box-shadow: 3px 3px 3px rgb(79, 76, 76);
+    display: flex;
+    flex-direction: column;
+
+    /*test*/
+    min-width: 300px;
+}
+
+.right {
+
+}
+
+
+
+.find img {
+    margin:10px;
+    width: 100%;
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+/*form css*/
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+
+input[type=text],
+input[type=email],
+input[type=date],
+select,
+radio {
+    margin-top: 20px;
+    width: 70%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+
+
+label {
+    display: inline-block;
+    width: 25%;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=reset] {
+    background-color: #de830b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 180px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=reset]:hover {
+    background-color: rgb(235, 83, 23);
+}
+
+/*left menu dashboard  */
+
+/* left menu dashboard */
+
+
+/* control small size*/
+
+label {
+	color: #fff;
+	font-size: 1.2em;
+	padding: 15px 0;
+	display: none;
+}
+
+@media (max-width: 960px) {
+	label {
+		display: block;
+	}
+
+	.container {
+		padding: 0 40px;
+	}
+
+	.social li:nth-child(1),
+	.social li:nth-child(2) {
+		display: none;
+	}
+
+	.logo {
+		left: 38%;
+		top: -60px;
+	}
+
+	.logo img {
+		width: 150px;
+		height: 133px;
+	}
+
+	nav {
+		padding: 0;
+	}
+
+	nav ul {
+		position: absolute;
+		top: 50px;
+		left: -100%;
+		background: #000;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		width: 100%;
+		height: 100vh;
+	}
+
+	#menu:checked~ul {
+		left: 0;
+	}
+
+	nav ul li {
+		margin: 0 !important;
+		width: 100%;
+	}
+
+	nav ul li a {
+		border: 1px solid #724d4a;
+		padding: 15px 0;
+		margin: 10px 0;
+		text-align: center;
+	}
+
+	nav ul li a:hover {
+		background: rgb(65, 65, 2);
+	}
+}
+
+@media (max-width: 460px) {
+	.logo {
+		top: -30px;
+	}
+
+	.logo img {
+		width: 100px;
+	}
+}
+
+
+/* profile cards */ 
+
+
+/* Existing styles here... */
+
+/* New styles with higher specificity */
+.game-info-container .game-info-card {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    border-radius: 20px;
+	margin: auto;
+    box-shadow: 5px 5px 5px 5px #401916;
+    background-color: #999;
+    overflow: hidden;
+}
+
+.game-info-container .game-info-title {
+    width: 100%;
+    background-color: #333;
+    color: #ff0000;
+    font-size: 1.3em;
+    font-weight: 900;
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.game-info-container .game-info-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-info-container .game-info-image {
+    flex: 0 0 400px;
+    width: 400px;
+    height: fit-content;
+}
+
+.game-info-container .game-info-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 0 20px;
+}
+
+.game-info-container .game-desc, 
+.game-info-container .game-date, 
+.game-info-container .game-gender {
+    font-size: 20px;
+	margin-top: 7px;
+}
+
+
+
+.game-info-container .game-info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fbfbfb;
+    border-radius: 0 0 20px 0;
+}
+
+/*contact us page cards for profile */
+.card-profile-container {
+	box-shadow: 3px 3px 3px 3px #401916;
+	border-radius: 20px;
+	background-color: #EDEDED;
+	padding: 20px;
+	width: 90%;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; /* Adjust as needed for spacing */
+    margin: 20px auto; /* Add margin to the container for overall spacing */
+}
+
+.card-profile {
+    border: 1px solid #efe3e3;
+    border-radius: 10px;
+    width: 250px;
+    background-color: #fff; /* Ensure cards have background to prevent transparency stacking issues */
+    flex: 0 0 calc(25% - 20px); /* Adjust the width of the cards. Subtracting the gap size */
+}
+
+.card-profile .card-header {
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-profile .card-header .name {
+	color: red;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-profile .card-body {
+    text-align: center;
+}
+
+.card-profile .mail {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card-profile .job {
+    color: #666;
+    font-style: italic;
+}
+
+.card-profile .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.card-profile .social-icon {
+    font-size: 24px;
+    margin: 0 5px;
+    color: #333;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Example</title>
+<style>
+.game-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-info-card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px 5px #401916;
+    background-color: #999;
+    overflow: hidden;
+}
+
+.game-info-title {
+    width: 100%;
+    background-color: #333;
+    color: #ff0000;
+    font-size: 1.3em;
+    font-weight: 900;
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.game-info-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-info-image {
+    flex: 0 0 400px;
+    width: 400px;
+    height: 400px;
+}
+
+.game-info-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 0 20px;
+}
+
+.game-desc, .game-date, .game-gender {
+    padding: 10px;
+    background-color: #a70202;
+    font-size: 20px;
+    flex: 1;
+}
+
+.game-desc p, .game-date p, .game-gender p {
+    margin: 10px 0;
+}
+
+.game-info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: #a70202;
+    border-radius: 0 0 20px 0;
+}
+
+</style>
+</head>
+<body>
+    <div class="game-info-container">
+        <div class="game-info-card">
+            <div class="game-info-title">
+                <h2>Game Title</h2>
+            </div>
+            <div class="game-info-content">
+                <div class="game-info-image">
+                    <img src="path-to-image.jpg" alt="Game Image" />
+                </div>
+                <div class="game-info-text">
+                    <div class="game-desc">
+                        <p><strong>Description:</strong> Description text goes here.</p>
+                    </div>
+                    <div class="game-date">
+                        <p><strong>Release Year:</strong> 2024</p>
+                    </div>
+                    <div class="game-gender">
+                        <p><strong>Genre:</strong> Action/Adventure</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="saga">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="juegos" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="juego" type="juegoType" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="bosses" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="boss" type="bossType"  maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="generoType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="RPG"/>
+            <xs:enumeration value="Action RPG"/>
+            <xs:enumeration value="Action-Adventure"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="juegoType">
+        <xs:sequence>
+            <xs:element name="titulo" type="xs:string"/>
+            <xs:element name="descripcion" type="xs:string"/>
+            <xs:element name="fecha_salida" type="xs:gYear" />
+            <xs:element name="genero" type="generoType"/>
+            <xs:element name="imagen" type="imagePathType"/> 
+            <xs:element name="premios">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="premio" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:simpleContent>
+                                    <xs:extension base="xs:string">
+                                        <xs:attribute name="estado" type="xs:string"/>
+                                    </xs:extension>
+                                </xs:simpleContent>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="bossType">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+
+            <xs:choice>
+                <xs:element name="femenino" type="xs:string"/>
+                <xs:element name="masculino" type="xs:string"/>
+                <xs:element name="otros" type="xs:string"/>
+            </xs:choice>
+
+            <xs:element name="lore" type="xs:string"/>
+            <xs:element name="armas">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="arma" type="xs:string"  minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="imagen" type="imagePathType"/> 
+            <xs:element name="localizacion" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="id"  use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="[a-z]+"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="juego" type="xs:string"/>
+    </xs:complexType>
+    
+    <xs:element name="fecha_salida" default="2024">
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:minInclusive value="1990"/>
+                <xs:maxInclusive value="2024"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:simpleType name="imagePathType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="^(?!.*[\\/:*?"<>|]).+\.(jpg|jpeg|gif|png)$"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+
+
+</xs:schema>
