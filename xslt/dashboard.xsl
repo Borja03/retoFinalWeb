@@ -7,7 +7,7 @@
       <head>
         <title>Dashboard</title>
         <script src="../../script/script.js"></script>
-       <!-- <link rel="stylesheet" href="../../css/styled.css"></link> -->
+        <link rel="stylesheet" href="../../css/styled.css"></link>
         <style>
           body {
             display: flex;
@@ -45,14 +45,14 @@
             border-radius: 5px;
             padding: 20px;
             text-align: center;
-            width: 20%;
+            width: 25%;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             color: white;
           }
           .card h2 {
             margin-top: 0;
           }
-          .card:first-child {
+          .card:first-child  {
             background-color: #98a;
           }
           .card:nth-child(2) {
@@ -66,17 +66,18 @@
             padding: 0;
           }
           ul.sidebar-list li {
-            padding: 20px;
+            padding: 0;
             font-size: 18px;
             color: #9e9ea4;
           }
           ul.sidebar-list li a {
+            display: block;
+            padding: 20px;
             text-decoration: none;
             color: #9e9ea4;
           }
-          ul.sidebar-list li:hover {
+          ul.sidebar-list li a:hover {
             background-color: rgba(255, 255, 255, 0.2);
-            cursor: pointer;
           }
         </style>
       </head>
@@ -84,7 +85,7 @@
         <!-- Sidebar -->
         <aside>
           <div class="sidebar-title">
-            <h2 class="sidebar-brand"> Dash-Menu</h2>
+            <h2 class="sidebar-brand">Menu</h2>
           </div>
           <ul class="sidebar-list">
             <li>
