@@ -133,6 +133,7 @@
       <table>
         <tr>
           <th>Name</th>
+          <th>Image</th>
           <th>Description</th>
           <th>Weapons</th>
           <th>Location</th>
@@ -155,27 +156,31 @@
   </xsl:template>
   
   <!-- Match each boss -->
-  <xsl:template match="boss">
-    <tr>
-      <td>
-        <xsl:value-of select="nombre" />
-      </td>
-      <td>
-        <xsl:value-of select="descripcion" />
-      </td>
-      <td>
-        <ul>
-          <xsl:for-each select="armas/arma">
-            <li>
-              <xsl:value-of select="." />
-            </li>
-          </xsl:for-each>
-        </ul>
-      </td>
-      <td>
-        <xsl:value-of select="localizacion" />
-      </td>
-    </tr>
-  </xsl:template>
+<xsl:template match="boss">
+  <tr>
+    <td>
+      <xsl:value-of select="nombre" />
+    </td>
+    <td>
+      <img src="{concat('../../', imagen)}" alt="Imagen" style="width: 100%; height: auto;" />
+    </td>
+    <td>
+      <xsl:value-of select="lore" /> <!-- Cambiado de "descripcion" a "lore" -->
+    </td>
+    <td>
+      <ul>
+        <xsl:for-each select="armas/arma">
+          <li>
+            <xsl:value-of select="." />
+          </li>
+        </xsl:for-each>
+      </ul>
+    </td>
+    <td>
+      <xsl:value-of select="localizacion" />
+    </td>
+  </tr>
+</xsl:template>
+
   
 </xsl:stylesheet>
