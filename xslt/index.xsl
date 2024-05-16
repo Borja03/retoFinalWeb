@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="./css/style.css"/>
 
       </head>
-      <body>
+      <body id = "fondoIndex">
         <header>
           <div class="top"></div>
           <nav>
@@ -45,9 +45,10 @@
           </nav>
         </header>
         <div class="empty"></div>
-        <div class="main">
+        <div class="mainIndex">
           
-          <h2>Last 6 Bosses Added</h2>
+          <h2 style="color: white;">Last 6 Bosses Added</h2>
+
           <div class ="boss-card-container">
             <!-- Apply templates to select the last 6 bosses -->
             <xsl:apply-templates select="bosses/boss[position() &gt; last() - 6]">
